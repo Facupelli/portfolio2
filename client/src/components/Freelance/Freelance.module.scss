@@ -1,0 +1,13 @@
+@import "../../App.scss";
+
+.container {
+  @include section_width;
+  margin-top: 12rem;
+
+  .title {
+    @include section_title;
+  }
+  .works {
+    margin-top: 2rem;
+  }
+}

@@ -1,0 +1,18 @@
+@import "../../App.scss";
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+
+  > div {
+    font-size: 1.5rem;
+    color: $celeste;
+    position: fixed;
+    padding: 2rem 3rem;
+    z-index: 1;
+
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+}

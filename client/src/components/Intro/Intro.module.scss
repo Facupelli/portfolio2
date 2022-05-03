@@ -1,0 +1,36 @@
+@import '../../App.scss';
+
+.container{
+    margin-top: 8rem;
+    height: 85vh;
+    @include section_width(1080px);
+
+    >p{
+        margin: 0;
+        padding: 0;
+    }
+
+    .hi{
+        font-size: 1.1rem;
+        color: $rosado;
+        font-weight: 500;
+        word-spacing: .2rem;
+    }
+
+    .name{
+        color: #dedede;
+        font-weight: 700;
+        font-size: 4.5rem;
+    }
+
+    .dev{
+        color: #c9c9c9;
+        font-weight: 700;
+        font-size: 4rem;
+    }
+
+    .about{
+        color: #c9c9c9;
+        width: 50%;
+    }
+}

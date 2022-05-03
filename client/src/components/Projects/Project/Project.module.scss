@@ -1,0 +1,70 @@
+@import "../../../App.scss";
+
+.project {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  position: relative;
+  color: $font_color;
+  flex-direction: column;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid $celeste;
+
+  .first_column {
+    height: 100%;
+
+    > div {
+      &:first-child {
+        display: flex;
+      }
+    }
+    .project_title {
+      > p {
+        &:first-child {
+          font-weight: 700;
+          font-size: 1.2rem;
+        }
+        &:last-child {
+          font-weight: 500;
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    .links {
+      margin-left: auto;
+      margin-right: 2rem;
+      font-size: 1.5rem;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .description {
+      padding: 1rem;
+      background-color: $secondary_color;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      border-radius: 0.2rem;
+      position: absolute;
+      width: 45%;
+      top: 70px;
+    }
+
+    .techs {
+      position: absolute;
+      width: 45%;
+      bottom: 10px;
+      font-size: 0.9rem;
+      display: flex;
+      gap: 1rem;
+    }
+  }
+
+  .image_container {
+    width: 100%;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: .2rem;
+    }
+  }
+}

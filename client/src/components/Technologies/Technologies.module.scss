@@ -1,0 +1,43 @@
+@import "../../App.scss";
+
+.container {
+  @include section_width;
+  margin-top: 12rem;
+
+  .title {
+    @include section_title;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .info {
+    margin-top: 2rem;
+    color: white;
+
+    .list_container {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      margin-top: 1rem;
+
+      ul {
+        list-style: none;
+
+        li {
+          margin-bottom: .5rem;
+          color: $font_color;
+
+          &::before {
+            content: "-";
+            color: $rosado;
+            font-weight: 900;
+            display: inline-block;
+            width: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

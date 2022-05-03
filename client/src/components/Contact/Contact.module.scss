@@ -1,0 +1,36 @@
+@import "../../App.scss";
+
+.container {
+  @include section_width;
+  margin-bottom: 5rem;
+  margin-top: 12rem;
+
+
+  .title {
+    @include section_title;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+  .info {
+    color: $font_color;
+    text-align: center;
+    > p {
+      margin-bottom: 0.2rem;
+    }
+  }
+}
+
+.button_container {
+  margin: 3rem;
+}
+
+.button {
+  padding: 1rem 2rem;
+  border-radius: .2rem;
+  background-color: $secondary_color;
+  text-decoration: none;
+  color: $rosado;
+  font-weight: 600;
+}
