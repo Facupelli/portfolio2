@@ -14,14 +14,17 @@
 
     span {
       font-weight: 800;
+      font-size: 1.5rem;
     }
   }
 
   .pages {
-    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 70px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 2rem;
     text-align: center;
 

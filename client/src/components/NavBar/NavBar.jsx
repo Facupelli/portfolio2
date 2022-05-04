@@ -16,6 +16,7 @@ export default function NavBar({
     <nav className={s.container}>
       <div className={s.logo}>
         <span>Pelli</span>
+        <p>dev</p>
       </div>
       <div className={s.pages}>
         <div className={s.page}>

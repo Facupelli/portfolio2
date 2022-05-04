@@ -8,9 +8,9 @@ export default function Intro() {
       <p className={s.name}>Facundo Pellicer.</p>
       <p className={s.dev}>Full Stack Developer.</p>
       <p className={s.about}>
-        Im a software engineer specializing in building (and occasionally
-        designing) exceptional digital experiences. Currently, Im focused on
-        building accessible, human-centered products at Upstatement.
+        I have both frontend and backend knowledge which helps me build complete
+        websites and gives me flexibility and a wider view. Lately I'm enjoying
+        React more.
       </p>
     </div>
   );

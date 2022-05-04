@@ -1,9 +1,10 @@
 @import '../../App.scss';
 
 .container{
-    margin-top: 8rem;
+    margin-top: 10rem;
+    padding-left: 2rem;
     height: 85vh;
-    @include section_width(1050px);
+    @include section_width;
 
     >p{
         margin: 0;
@@ -30,6 +31,8 @@
     }
 
     .about{
+        margin-top: 1rem;
+        line-height: 1.5rem;
         color: #c9c9c9;
         width: 50%;
     }
