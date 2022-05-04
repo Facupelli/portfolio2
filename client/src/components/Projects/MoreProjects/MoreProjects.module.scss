@@ -9,7 +9,12 @@
   margin-top: 8rem;
 
   @media (min-width: 2000px) {
-    @include section_width(1200px)
+    @include section_width(1200px);
+  }
+
+  @media (max-width: 480px) {
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
   .title {
@@ -22,6 +27,10 @@
     gap: 2rem;
     row-gap: 4rem;
     flex-wrap: wrap;
+
+    @media (max-width: 480px) {
+      justify-content: center;
+    }
   }
 }
 
@@ -35,9 +44,9 @@
   position: relative;
   z-index: 2;
   border: 1px solid $secondary_color;
-  transition: all .5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
 
-  &:hover{
+  &:hover {
     border: 1px solid $rosado;
   }
 
