@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -10,8 +10,35 @@ import s from "./Networks.module.scss";
 import LinkComponent from "../Link/Link";
 
 export default function Networks() {
+  const [show, setShow] = useState(true)
+  const [lastScrollY, setLastScrollY] = useState(0)
+
+
+  const controlNavBar = () => {
+    if(typeof window !== 'undefined'){
+      if(window.scrollY > lastScrollY){
+        setShow(false)
+      }else{
+        setShow(true)
+      }
+
+      setLastScrollY(window.scrollY)
+    }
+  }
+
+  useEffect(() => {
+    if(typeof window !== 'undefined'){
+      window.addEventListener('scroll', controlNavBar)
+
+      return () => {
+        window.removeEventListener('scroll', controlNavBar)
+      }
+    }
+  },[lastScrollY])
+
+
   return (
-    <div className={s.container}>
+    <div className={show ? s.container : s.hidden}>
       <div>
         <LinkComponent href="https://www.instagram.com/facu_pellicer/" color="celeste">
           <FontAwesomeIcon icon={faInstagram} />
