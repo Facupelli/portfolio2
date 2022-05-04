@@ -3,11 +3,11 @@ import s from "./Section.module.scss";
 
 export default function Section({ title, children }) {
   return (
-    <div className={s.container}>
+    <section className={s.container}>
       <div className={s.title}>
         <p>{title}</p>
       </div>
       {children}
-    </div>
+    </section>
   );
 }

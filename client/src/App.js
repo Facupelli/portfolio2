@@ -20,7 +20,7 @@ function App() {
   const [seeMore, setSeeMore] = useState(false);
 
   return (
-    <div className="app">
+    <main className="app">
       <div className="nav_column">
         <NavBar
           aboutRef={aboutRef}
@@ -50,7 +50,7 @@ function App() {
           <Contact />
         </div>
       </div>
-    </div>
+    </main>
   );
 }
 

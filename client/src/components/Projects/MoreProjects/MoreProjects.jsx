@@ -9,6 +9,7 @@ import virtual from "../../../images/virtual.png";
 
 import s from "./MoreProjects.module.scss";
 import LinkComponent from "../../Link/Link";
+import Section from "../../Section/Section";
 
 const ProjectMore = ({ title, description, github, deploy, img }) => {
   return (
@@ -36,10 +37,7 @@ const ProjectMore = ({ title, description, github, deploy, img }) => {
 
 export default function MoreProjects() {
   return (
-    <div className={s.container}>
-      <div className={s.title}>
-        <p>OTHER PROJECTS</p>
-      </div>
+    <Section title="Other Projects">
       <div className={s.projects_container}>
         <ProjectMore
           title="TO-DO APP"
@@ -73,6 +71,6 @@ export default function MoreProjects() {
           github="https://github.com/Facupelli/Virtual360Tour"
         />
       </div>
-    </div>
+    </Section>
   );
 }

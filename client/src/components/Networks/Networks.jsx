@@ -36,7 +36,7 @@ export default function Networks() {
   }, [lastScrollY, memoizedControlNavBar]);
 
   return (
-    <div className={show ? s.container : s.hidden}>
+    <aside className={show ? s.container : s.hidden}>
       <div className={s.mail_mobile}>
         <p>facundopellicer4@gmail.com</p>
       </div>
@@ -65,6 +65,6 @@ export default function Networks() {
           <FontAwesomeIcon icon={faGithub} />
         </LinkComponent>
       </div>
-    </div>
+    </aside>
   );
 }
