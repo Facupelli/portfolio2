@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Intro from "./components/Intro/Intro";
 import NavBar from "./components/NavBar/NavBar";
 import "./App.scss";
@@ -10,19 +10,41 @@ import Freelance from "./components/Freelance/Freelance";
 import Contact from "./components/Contact/Contact";
 
 function App() {
+  const aboutRef = useRef(null);
+  const techsRef = useRef(null);
+  const projectsRef = useRef(null);
+  const freelanceRef = useRef(null);
+  const contactRef = useRef(null);
+
   return (
     <div className="app">
       <div className="nav_column">
-        <NavBar />
+        <NavBar
+          aboutRef={aboutRef}
+          techsRef={techsRef}
+          projectsRef={projectsRef}
+          freelanceRef={freelanceRef}
+          contactRef={contactRef}
+        />
       </div>
       <div className="main_column">
         <Networks />
         <Intro />
-        <About />
-        <Technologies />
-        <Projects />
-        <Freelance />
-        <Contact />
+        <div ref={aboutRef} style={{ scrollMargin: 100 }}>
+          <About />
+        </div>
+        <div ref={techsRef} style={{ scrollMargin: 100 }}>
+          <Technologies />
+        </div>
+        <div ref={projectsRef} style={{ scrollMargin: 100 }}>
+          <Projects />
+        </div>
+        <div ref={freelanceRef} style={{ scrollMargin: 100 }}>
+          <Freelance />
+        </div>
+        <div ref={contactRef} style={{ scrollMargin: 100 }}>
+          <Contact />
+        </div>
       </div>
     </div>
   );

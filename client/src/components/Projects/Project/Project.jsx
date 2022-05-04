@@ -23,22 +23,23 @@ export default function Project({
             <p>{subtitle}</p>
           </div>
           <div className={s.links}>
-            <FontAwesomeIcon icon={faGithub} />
-            <FontAwesomeIcon icon={faExternalLink} />
+            <a href={github} target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
+            <a href={deploy} target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faExternalLink} />
+            </a>
           </div>
         </div>
         <div className={s.description}>
           <p>{description}</p>
         </div>
         <div className={s.techs}>
-          {techs && techs.map((tech) => <p>{tech}</p>)}
+          {techs && techs.map((tech) => <p key={tech}>{tech}</p>)}
         </div>
       </div>
       <div className={s.image_container}>
-        <img
-          src={img}
-          alt="foto1"
-        />
+        <img src={img} alt="foto1" />
       </div>
     </div>
   );

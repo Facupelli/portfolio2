@@ -3,7 +3,7 @@
 .container{
     margin-top: 8rem;
     height: 85vh;
-    @include section_width(1080px);
+    @include section_width(1050px);
 
     >p{
         margin: 0;
