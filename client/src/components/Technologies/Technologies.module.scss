@@ -30,6 +30,15 @@
   .info {
     margin-top: 2rem;
     color: white;
+    border-right: 1px solid $rosado;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2rem;
+
+    @media (max-width: 480px) {
+      border-right: none;
+      padding: 0;
+    }
 
     .list_container {
       display: grid;
