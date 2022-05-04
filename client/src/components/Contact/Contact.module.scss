@@ -5,13 +5,12 @@
   margin-bottom: 12rem;
   margin-top: 12rem;
 
-
   .title {
     @include section_title;
     margin-bottom: 2rem;
     display: flex;
     justify-content: center;
-}
+  }
 
   .info {
     color: $font_color;
@@ -28,9 +27,18 @@
 
 .button {
   padding: 1rem 2rem;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   background-color: $secondary_color;
   text-decoration: none;
   color: $rosado;
   font-weight: 600;
+  border: 1px solid $secondary_color;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: all 0.5s ease-in-out 0s;
+
+  &:hover {
+    background-color: transparent;
+    border: 1px solid $rosado;
+    box-shadow: none;
+  }
 }

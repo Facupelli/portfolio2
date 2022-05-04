@@ -4,6 +4,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
 
 import s from "./Project.module.scss";
+import LinkComponent from "../../Link/Link";
 
 export default function Project({
   title,
@@ -23,12 +24,12 @@ export default function Project({
             <p>{subtitle}</p>
           </div>
           <div className={s.links}>
-            <a href={github} target="_blank" rel="noopener noreferrer">
+            <LinkComponent href={github}>
               <FontAwesomeIcon icon={faGithub} />
-            </a>
-            <a href={deploy} target="_blank" rel="noopener noreferrer">
+            </LinkComponent>
+            <LinkComponent href={deploy}>
               <FontAwesomeIcon icon={faExternalLink} />
-            </a>
+            </LinkComponent>
           </div>
         </div>
         <div className={s.description}>

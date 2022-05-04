@@ -21,6 +21,11 @@
       border: 3px solid $rosado;
       border-radius: 0.2rem;
       position: relative;
+      transition: all .5s ease-in-out 0s;
+
+      &:hover {
+        border: 3px solid $celeste;
+      }
 
       img {
         position: absolute;

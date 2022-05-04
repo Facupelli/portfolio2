@@ -3,11 +3,12 @@ import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import todo from "../../../images/to-do.png";
-import alkemy from '../../../images/alkemy.png';
-import cognizant from '../../../images/cognizant.png';
-import virtual from '../../../images/virtual.png';
+import alkemy from "../../../images/alkemy.png";
+import cognizant from "../../../images/cognizant.png";
+import virtual from "../../../images/virtual.png";
 
 import s from "./MoreProjects.module.scss";
+import LinkComponent from "../../Link/Link";
 
 const ProjectMore = ({ title, description, github, deploy, img }) => {
   return (
@@ -19,12 +20,12 @@ const ProjectMore = ({ title, description, github, deploy, img }) => {
         <div className={s.info}>
           <p>{description}</p>
           <div className={s.links}>
-            <a href={github} target="_blank" rel="noopener noreferrer">
+            <LinkComponent href={github}>
               <FontAwesomeIcon icon={faGithub} />
-            </a>
-            <a href={deploy} target="_blank" rel="noopener noreferrer">
+            </LinkComponent>
+            <LinkComponent href={deploy}>
               <FontAwesomeIcon icon={faExternalLink} />
-            </a>
+            </LinkComponent>
           </div>
         </div>
       </div>

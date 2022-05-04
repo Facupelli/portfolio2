@@ -7,18 +7,27 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import s from "./Networks.module.scss";
+import LinkComponent from "../Link/Link";
 
 export default function Networks() {
   return (
     <div className={s.container}>
       <div>
-        <FontAwesomeIcon icon={faInstagram} />
+        <LinkComponent href="https://www.instagram.com/facu_pellicer/" color="celeste">
+          <FontAwesomeIcon icon={faInstagram} />
+        </LinkComponent>
         <p>-</p>
-        <FontAwesomeIcon icon={faTwitter} />
+        <LinkComponent href="https://twitter.com/Pelliscame" color="celeste">
+          <FontAwesomeIcon icon={faTwitter} />
+        </LinkComponent>
         <p>-</p>
-        <FontAwesomeIcon icon={faLinkedinIn} />
+        <LinkComponent href="https://www.linkedin.com/in/facundo-pellicer-full-stack-developer/" color="celeste">
+          <FontAwesomeIcon icon={faLinkedinIn} />
+        </LinkComponent>
         <p>-</p>
-        <FontAwesomeIcon icon={faGithub} />
+        <LinkComponent href="https://github.com/Facupelli" color="celeste">
+          <FontAwesomeIcon icon={faGithub} />
+        </LinkComponent>
       </div>
     </div>
   );
