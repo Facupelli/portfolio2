@@ -3,8 +3,6 @@
 .container {
   @include section_width;
   margin-top: 12rem;
-  background-color: red;
-
 
   @media (min-width: 2000px) {
     @include section_width(1300px);
