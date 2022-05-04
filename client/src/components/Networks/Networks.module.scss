@@ -5,6 +5,18 @@
   z-index: 1;
   right: 1rem;
 
+  .mail_mobile{
+    display: none;
+
+    @media (max-width: 480px) {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+
   > div {
     font-size: 1.3rem;
     color: $celeste;
@@ -14,9 +26,20 @@
     gap: 1.5rem;
     align-items: center;
 
-    .mail{
-      font-size: .8rem;
-      // color: $font_color;
+    @media (max-width: 480px) {
+      padding: 1rem 0;
+      gap: 0.5rem;
+    }
+
+    @media (max-width: 480px) {
+      padding: 0;
+    }
+
+    .mail {
+      font-size: 0.8rem;
+      @media (max-width: 480px) {
+        visibility: hidden;
+      }
     }
   }
 }

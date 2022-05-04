@@ -25,9 +25,9 @@ $font_color: #dedede;
   grid-template-columns: 15% 85%;
   background-color: $primary_color;
 
-//   .main_column {
-//     // padding-left: 4rem;
-//   }
+  @media (max-width: 480px) {
+    display:inline-block;
+  }
 
   .nav_column {
     background-color: aqua;

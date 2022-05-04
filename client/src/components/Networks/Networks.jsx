@@ -10,39 +10,43 @@ import s from "./Networks.module.scss";
 import LinkComponent from "../Link/Link";
 
 export default function Networks() {
-  const [show, setShow] = useState(true)
-  const [lastScrollY, setLastScrollY] = useState(0)
-
+  const [show, setShow] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   const controlNavBar = () => {
-    if(typeof window !== 'undefined'){
-      if(window.scrollY > lastScrollY){
-        setShow(false)
-      }else{
-        setShow(true)
+    if (typeof window !== "undefined") {
+      if (window.scrollY > lastScrollY) {
+        setShow(false);
+      } else {
+        setShow(true);
       }
 
-      setLastScrollY(window.scrollY)
+      setLastScrollY(window.scrollY);
     }
-  }
+  };
 
   useEffect(() => {
-    if(typeof window !== 'undefined'){
-      window.addEventListener('scroll', controlNavBar)
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", controlNavBar);
 
       return () => {
-        window.removeEventListener('scroll', controlNavBar)
-      }
+        window.removeEventListener("scroll", controlNavBar);
+      };
     }
-  },[lastScrollY])
-
+  }, [lastScrollY]);
 
   return (
     <div className={show ? s.container : s.hidden}>
+      <div className={s.mail_mobile}>
+        <p>facundopellicer4@gmail.com</p>
+      </div>
       <div>
         <p className={s.mail}>facundopellicer4@gmail.com</p>
         <p>-</p>
-        <LinkComponent href="https://www.instagram.com/facu_pellicer/" color="celeste">
+        <LinkComponent
+          href="https://www.instagram.com/facu_pellicer/"
+          color="celeste"
+        >
           <FontAwesomeIcon icon={faInstagram} />
         </LinkComponent>
         <p>-</p>
@@ -50,7 +54,10 @@ export default function Networks() {
           <FontAwesomeIcon icon={faTwitter} />
         </LinkComponent>
         <p>-</p>
-        <LinkComponent href="https://www.linkedin.com/in/facundo-pellicer-full-stack-developer/" color="celeste">
+        <LinkComponent
+          href="https://www.linkedin.com/in/facundo-pellicer-full-stack-developer/"
+          color="celeste"
+        >
           <FontAwesomeIcon icon={faLinkedinIn} />
         </LinkComponent>
         <p>-</p>

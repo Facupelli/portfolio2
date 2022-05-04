@@ -35,12 +35,12 @@ export default function Project({
         <div className={s.description}>
           <p>{description}</p>
         </div>
-        <div className={s.techs}>
-          {techs && techs.map((tech) => <p key={tech}>{tech}</p>)}
-        </div>
       </div>
       <div className={s.image_container}>
         <img src={img} alt="foto1" />
+      </div>
+      <div className={s.techs}>
+        {techs && techs.map((tech) => <p key={tech}>{tech}</p>)}
       </div>
     </div>
   );

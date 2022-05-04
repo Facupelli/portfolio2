@@ -7,6 +7,10 @@
   width: 15%;
   box-shadow: 1px 0px 3px $rosado;
 
+  @media (max-width: 480px) {
+    visibility:hidden;
+  }
+
   .logo {
     color: white;
     padding-top: 5rem;

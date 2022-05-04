@@ -8,6 +8,11 @@
     @include section_width(1300px)
   }
 
+  @media (max-width: 480px) {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
   .title {
     @include section_title;
   }
@@ -15,6 +20,11 @@
   .grid {
     display: grid;
     grid-template-columns: 50% 50%;
+
+    @media (max-width: 480px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   .info {
