@@ -6,13 +6,18 @@
   right: 1rem;
 
   > div {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: $celeste;
     padding: 2rem 3rem;
 
     display: flex;
     gap: 1.5rem;
     align-items: center;
+
+    .mail{
+      font-size: .8rem;
+      // color: $font_color;
+    }
   }
 }
 

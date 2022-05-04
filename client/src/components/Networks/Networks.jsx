@@ -40,6 +40,8 @@ export default function Networks() {
   return (
     <div className={show ? s.container : s.hidden}>
       <div>
+        <p className={s.mail}>facundopellicer4@gmail.com</p>
+        <p>-</p>
         <LinkComponent href="https://www.instagram.com/facu_pellicer/" color="celeste">
           <FontAwesomeIcon icon={faInstagram} />
         </LinkComponent>
