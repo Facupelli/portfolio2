@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -13,7 +13,7 @@ export default function Networks() {
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  const controlNavBar = () => {
+  const memoizedControlNavBar = useCallback(() => {
     if (typeof window !== "undefined") {
       if (window.scrollY > lastScrollY) {
         setShow(false);
@@ -23,17 +23,17 @@ export default function Networks() {
 
       setLastScrollY(window.scrollY);
     }
-  };
+  }, [lastScrollY]);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      window.addEventListener("scroll", controlNavBar);
+      window.addEventListener("scroll", memoizedControlNavBar);
 
       return () => {
-        window.removeEventListener("scroll", controlNavBar);
+        window.removeEventListener("scroll", memoizedControlNavBar);
       };
     }
-  }, [lastScrollY]);
+  }, [lastScrollY, memoizedControlNavBar]);
 
   return (
     <div className={show ? s.container : s.hidden}>

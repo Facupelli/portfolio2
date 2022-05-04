@@ -3,7 +3,7 @@ import s from "./Contact.module.scss";
 
 const Mailto = ({ email, children }) => {
   return (
-    <a target="_blank" href={`mailto:${email}`} className={s.button}>
+    <a target="_blank" href={`mailto:${email}`} rel="noreferrer" className={s.button}>
       {children}
     </a>
   );
