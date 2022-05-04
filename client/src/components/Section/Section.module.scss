@@ -1,0 +1,19 @@
+@import "../../App.scss";
+
+.container {
+  @include section_width;
+  margin-bottom: 12rem;
+
+  @media (min-width: 2000px) {
+    @include section_width(1300px);
+  }
+
+  @media (max-width: 480px){
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .title {
+    @include section_title;
+  }
+}

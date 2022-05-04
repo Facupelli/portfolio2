@@ -2,6 +2,7 @@ import React from "react";
 import Project from "./Project/Project";
 import cuyo from "../../images/cuyo.png";
 import s from "./Projects.module.scss";
+import Section from "../Section/Section";
 
 export default function Projects({ setSeeMore, seeMore }) {
   const handleSeeMore = () => {
@@ -9,10 +10,7 @@ export default function Projects({ setSeeMore, seeMore }) {
   };
 
   return (
-    <div className={s.container}>
-      <div className={s.title}>
-        <p>Projects</p>
-      </div>
+    <Section title="Projects">
       <div className={s.projects_container}>
         <Project
           title="SERVICE E-COMMERCE"
@@ -72,6 +70,6 @@ export default function Projects({ setSeeMore, seeMore }) {
           <button onClick={handleSeeMore}>SEE MORE</button>
         </div>
       )}
-    </div>
+    </Section>
   );
 }

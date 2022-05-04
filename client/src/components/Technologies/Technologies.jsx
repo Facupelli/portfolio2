@@ -7,13 +7,11 @@ import {
   faPython,
 } from "@fortawesome/free-brands-svg-icons";
 import s from "./Technologies.module.scss";
+import Section from "../Section/Section";
 
 export default function Technologies() {
   return (
-    <div className={s.container}>
-      <div className={s.title}>
-        <p>Technologies</p>
-      </div>
+    <Section title="Technologies">
       <div className={s.grid}>
         <div className={s.info}>
           <p>Here are few technologies I am familarized with:</p>
@@ -53,6 +51,6 @@ export default function Technologies() {
           </div>
         </div>
       </div>
-    </div>
+    </Section>
   );
 }

@@ -2,13 +2,11 @@ import React from "react";
 import Project from "../Projects/Project/Project";
 import alalaCampo from "../../images/alalaCasa1.png";
 import s from "./Freelance.module.scss";
+import Section from "../Section/Section";
 
 export default function Freelance() {
   return (
-    <div className={s.container}>
-      <div className={s.title}>
-        <p> FREELANCE</p>
-      </div>
+    <Section title="Freelance">
       <div className={s.works}>
         <Project
           title="ALALA CAMPO"
@@ -20,6 +18,6 @@ export default function Freelance() {
           deploy="https://www.alalacampo.com/"
         />
       </div>
-    </div>
+    </Section>
   );
 }

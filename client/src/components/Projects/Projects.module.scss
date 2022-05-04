@@ -1,52 +1,34 @@
 @import "../../App.scss";
 
-.container {
-  @include section_width;
-  margin-top: 12rem;
+.projects_container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  border-bottom: 1px solid $celeste;
 
   @media (min-width: 2000px) {
-    @include section_width(1300px);
+    gap: 10rem;
   }
+}
+.button_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
 
-  @media (max-width: 480px) {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
+  button {
+    padding: 1rem 2rem;
+    background-color: transparent;
+    border: 1px solid $celeste;
+    color: $font_color;
+    border-radius: 0.2rem;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out 0s;
 
-  .title {
-    @include section_title;
-  }
-
-  .projects_container {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 8rem;
-    border-bottom: 1px solid $celeste;
-
-    @media (min-width: 2000px) {
-      gap: 10rem;
-    }
-  }
-  .button_container {
-    display: flex;
-    justify-content: center;
-    margin-top: 8rem;
-
-    button {
-      padding: 1rem 2rem;
-      background-color: transparent;
-      border: 1px solid $celeste;
-      color: $font_color;
-      border-radius: 0.2rem;
-      font-weight: 600;
-      transition: all 0.2s ease-in-out 0s;
-
-      &:hover {
-        border: 1px solid $rosado;
-        color: $rosado;
-        cursor: pointer;
-      }
+    &:hover {
+      border: 1px solid $rosado;
+      color: $rosado;
+      cursor: pointer;
     }
   }
 }

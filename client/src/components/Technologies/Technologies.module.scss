@@ -1,73 +1,55 @@
 @import "../../App.scss";
 
-.container {
-  @include section_width;
-  margin-top: 12rem;
-
-  @media (min-width: 2000px) {
-    @include section_width(1300px);
-  }
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
 
   @media (max-width: 480px) {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.info {
+  margin-top: 2rem;
+  color: white;
+  border-right: 1px solid $rosado;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2rem;
+
+  @media (max-width: 480px) {
+    border-right: none;
+    padding: 0;
   }
 
-  .title {
-    @include section_title;
-  }
-
-  .grid {
+  .list_container {
     display: grid;
     grid-template-columns: 50% 50%;
+    margin-top: 1rem;
+    color: $font_color;
+
+    @media (min-width: 2000px) {
+      grid-template-columns: 40% 40%;
+    }
 
     @media (max-width: 480px) {
       display: flex;
-      flex-direction: column;
-    }
-  }
-
-  .info {
-    margin-top: 2rem;
-    color: white;
-    border-right: 1px solid $rosado;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 2rem;
-
-    @media (max-width: 480px) {
-      border-right: none;
-      padding: 0;
+      flex-wrap: wrap;
     }
 
-    .list_container {
-      display: grid;
-      grid-template-columns: 50% 50%;
-      margin-top: 1rem;
-      color: $font_color;
+    ul {
+      list-style: none;
 
-      @media (min-width: 2000px) {
-        grid-template-columns: 40% 40%;
-      }
+      li {
+        margin-bottom: 0.5rem;
 
-      @media (max-width: 480px) {
-        display: flex;
-        flex-wrap: wrap;
-      }
-
-      ul {
-        list-style: none;
-
-        li {
-          margin-bottom: 0.5rem;
-
-          &::before {
-            content: "-";
-            color: $rosado;
-            font-weight: 900;
-            display: inline-block;
-            width: 1rem;
-          }
+        &::before {
+          content: "-";
+          color: $rosado;
+          font-weight: 900;
+          display: inline-block;
+          width: 1rem;
         }
       }
     }
