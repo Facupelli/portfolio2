@@ -17,7 +17,7 @@ export default function Projects({ setSeeMore, seeMore }) {
         <Project
           title="SERVICE E-COMMERCE"
           subtitle="buy and offer services"
-          description="This was my last project at Henry Bootcamp, I worked with 7 teammates both in the Frontend and Backend to create this app. Post a service, add a service to favourites, buy a service and then rate it among other functions. As the Admin user you can view all kind of statistics related to users and to the services offered."
+          description="My last project at Henry Bootcamp, I worked with 7 teammates both in the Frontend and Backend. Post a service, add a it to favourites, buy a service and rate it among other functions. As the Admin you can view all kind of statistics related to users and to the services."
           techs={[
             "React",
             "Redux",
@@ -34,7 +34,7 @@ export default function Projects({ setSeeMore, seeMore }) {
         <Project
           title="HOMEBREW RECIPE BUILDER"
           subtitle="share, rate and follow beer recipes"
-          description="This project is like a social-network for beer homebrewers. Brewers can post their recipes and get feedback with a score and a comment. You can post a recipe, where the OG, FG, ABV and SRM are calculated automatically, add a recipe to favourites, comment and rate it. Search recipes by name, stlye among others."
+          description="This project is like a social-network for beer homebrewers. Share your recipes and get feedback with a score and a comment. Post a recipe, where the OG, FG, ABV and SRM are calculated automatically, add it to favourites, comment and rate it. Search recipes by name, stlye among others."
           techs={[
             "React",
             "Redux",
@@ -52,7 +52,7 @@ export default function Projects({ setSeeMore, seeMore }) {
         <Project
           title="DOG APP (uses API)"
           subtitle="thedogapi.com"
-          description="This was my first full stack experience at Henry Bootcamp. The Dogg App is a SPA (Single Page Application) that consumes data of an API (The Dog API). In the app you can find all dogs breeds, search breeds by name, filter breeds by temperament and sort them by weight or alphabetically."
+          description="This was my first full stack experience at Henry Bootcamp. The Dogg App is a SPA (Single Page Application) that consumes data of an API. Find all dogs breeds, search breeds by name, filter breeds by temperament and sort them by weight or alphabetically."
           techs={[
             "React",
             "Redux",

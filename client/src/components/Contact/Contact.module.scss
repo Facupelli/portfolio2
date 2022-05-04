@@ -5,6 +5,10 @@
   margin-bottom: 12rem;
   margin-top: 12rem;
 
+  @media (min-width: 2000px) {
+    @include section_width(1300px)
+  }
+
   .title {
     @include section_title;
     margin-bottom: 2rem;

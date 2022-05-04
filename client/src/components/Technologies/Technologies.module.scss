@@ -4,6 +4,10 @@
   @include section_width;
   margin-top: 12rem;
 
+  @media (min-width: 2000px) {
+    @include section_width(1300px)
+  }
+
   .title {
     @include section_title;
   }
@@ -21,6 +25,10 @@
       display: grid;
       grid-template-columns: 50% 50%;
       margin-top: 1rem;
+
+      @media (min-width: 2000px) {
+        grid-template-columns: 40% 40%;
+      }
 
       ul {
         list-style: none;

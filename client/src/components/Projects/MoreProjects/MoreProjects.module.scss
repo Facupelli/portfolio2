@@ -8,6 +8,10 @@
   @include section_width;
   margin-top: 8rem;
 
+  @media (min-width: 2000px) {
+    @include section_width(1200px)
+  }
+
   .title {
     @include section_title;
   }

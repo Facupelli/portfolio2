@@ -4,6 +4,10 @@
   @include section_width;
   margin-top: 12rem;
 
+  @media (min-width: 2000px) {
+    @include section_width(1300px);
+  }
+
   .title {
     @include section_title;
   }
@@ -14,6 +18,10 @@
     flex-direction: column;
     gap: 8rem;
     border-bottom: 1px solid $celeste;
+
+    @media (min-width: 2000px) {
+      gap: 10rem;
+    }
   }
   .button_container {
     display: flex;
@@ -25,11 +33,11 @@
       background-color: transparent;
       border: 1px solid $celeste;
       color: $font_color;
-      border-radius: .2rem;
+      border-radius: 0.2rem;
       font-weight: 600;
-      transition: all .2s ease-in-out 0s;
+      transition: all 0.2s ease-in-out 0s;
 
-      &:hover{
+      &:hover {
         border: 1px solid $rosado;
         color: $rosado;
         cursor: pointer;

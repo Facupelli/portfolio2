@@ -2,7 +2,10 @@
 
 .container {
   @include section_width;
-  margin-top: 0rem;
+
+  @media (min-width: 2000px) {
+    @include section_width(1300px);
+  }
 
   .title {
     @include section_title;
@@ -21,7 +24,11 @@
       border: 3px solid $rosado;
       border-radius: 0.2rem;
       position: relative;
-      transition: all .5s ease-in-out 0s;
+      transition: all 0.5s ease-in-out 0s;
+
+      @media (min-width: 2000px) {
+        width: 78%;
+      }
 
       &:hover {
         border: 3px solid $celeste;
@@ -41,6 +48,12 @@
         p {
           color: $font_color;
           margin-bottom: 1rem;
+          line-height: 1.5rem;
+
+          @media (min-width: 2000px) {
+            width: 78%;
+            line-height: 1.5rem;
+          }
         }
       }
     }

@@ -20,7 +20,7 @@ export default function Contact() {
           I am currently looking for my first opportunity to contribute on
           challenging projects.
         </p>
-        <p>I have lot of energy!</p>
+        <p>I am available to work!</p>
         <div className={s.button_container}>
           <Mailto email="facundopellicer4@gmail.com">Mail me!</Mailto>
         </div>
