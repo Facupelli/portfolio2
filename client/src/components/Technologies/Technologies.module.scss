@@ -44,6 +44,7 @@
       display: grid;
       grid-template-columns: 50% 50%;
       margin-top: 1rem;
+      color: $font_color;
 
       @media (min-width: 2000px) {
         grid-template-columns: 40% 40%;
@@ -59,7 +60,6 @@
 
         li {
           margin-bottom: 0.5rem;
-          color: $font_color;
 
           &::before {
             content: "-";
