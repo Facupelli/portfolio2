@@ -6,9 +6,14 @@
   position: fixed;
   width: 15%;
   box-shadow: 1px 0px 3px $rosado;
+  transition: all .3s ease-in-out 0s;
+
+  &:hover {
+    box-shadow: 2px 0px 4px $rosado;
+  }
 
   @media (max-width: 480px) {
-    visibility:hidden;
+    visibility: hidden;
   }
 
   .logo {
@@ -38,7 +43,7 @@
       cursor: pointer;
 
       span {
-        transition: all .3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
 
         &:hover {
           color: $rosado;
