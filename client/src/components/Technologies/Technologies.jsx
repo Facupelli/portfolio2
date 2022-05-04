@@ -14,7 +14,7 @@ export default function Technologies() {
     <Section title="Technologies">
       <div className={s.grid}>
         <div className={s.info}>
-          <p>Here are few technologies I am familarized with:</p>
+          <p>Here are few technologies I am familiarized with:</p>
           <div className={s.list_container}>
             <ul>
               <li>
