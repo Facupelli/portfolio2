@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Intro from "./components/Intro/Intro";
 import NavBar from "./components/NavBar/NavBar";
 import "./App.scss";
@@ -8,6 +8,7 @@ import Technologies from "./components/Technologies/Technologies";
 import Projects from "./components/Projects/Projects";
 import Freelance from "./components/Freelance/Freelance";
 import Contact from "./components/Contact/Contact";
+import MoreProjects from "./components/Projects/MoreProjects/MoreProjects";
 
 function App() {
   const aboutRef = useRef(null);
@@ -15,6 +16,8 @@ function App() {
   const projectsRef = useRef(null);
   const freelanceRef = useRef(null);
   const contactRef = useRef(null);
+
+  const [seeMore, setSeeMore] = useState(false);
 
   return (
     <div className="app">
@@ -37,8 +40,9 @@ function App() {
           <Technologies />
         </div>
         <div ref={projectsRef} style={{ scrollMargin: 100 }}>
-          <Projects />
+          <Projects setSeeMore={setSeeMore} seeMore={seeMore} />
         </div>
+        {seeMore && <MoreProjects />}
         <div ref={freelanceRef} style={{ scrollMargin: 100 }}>
           <Freelance />
         </div>

@@ -3,7 +3,11 @@ import Project from "./Project/Project";
 import cuyo from "../../images/cuyo.png";
 import s from "./Projects.module.scss";
 
-export default function Projects() {
+export default function Projects({ setSeeMore, seeMore }) {
+  const handleSeeMore = () => {
+    setSeeMore(true);
+  };
+
   return (
     <div className={s.container}>
       <div className={s.title}>
@@ -62,9 +66,12 @@ export default function Projects() {
           deploy="https://pi-dogs-definitive.vercel.app/"
         />
       </div>
-      <div className={s.button_container}>
-        <button>SEE MORE</button>
-      </div>
+
+      {!seeMore && (
+        <div className={s.button_container}>
+          <button onClick={handleSeeMore}>SEE MORE</button>
+        </div>
+      )}
     </div>
   );
 }
