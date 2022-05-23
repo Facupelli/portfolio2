@@ -9,8 +9,7 @@ export default function Intro() {
       <p className={s.dev}>Full Stack Developer.</p>
       <p className={s.about}>
         I have both frontend and backend knowledge which helps me build complete
-        websites, gives me flexibility and a wider view. Lately I'm enjoying
-        React more.
+        websites, gives me flexibility and a wider view. In love with React.js.
       </p>
     </div>
   );
