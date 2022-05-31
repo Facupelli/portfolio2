@@ -1,7 +1,7 @@
 import React from "react";
 import Project from "../Projects/Project/Project";
 import alalaCampo from "../../images/alalaCasa1.png";
-import donutshomero from '../../images/donutshomero.png'
+import donutshomero from "../../images/donutshomero.png";
 import s from "./Freelance.module.scss";
 import Section from "../Section/Section";
 
@@ -12,10 +12,10 @@ export default function Freelance() {
         <Project
           title="ALALA CAMPO"
           subtitle="info website"
-          description="This is a freelance work. The idea was to show the place, the three houses with its amenities and services, and to have a way to reach the place owner. Next features: have a calendar with availables dates to reserve the house trough the website with Mercado Pago"
-          techs={["React", "Sass", "React-hook-form"]}
+          description="The idea was to show the place, the three houses with its amenities and services, and to have a way to reach the place owner. Each house has it's calendar whith available and booked dates. Admin can book dates and view info about reserved dates."
+          techs={["Next.js","React", "Sass", "MongoDB", "Mongoose"]}
           img={alalaCampo}
-          github="https://github.com/Facupelli/Alala-Campo"
+          github="https://github.com/Facupelli/AlalaCampo"
           deploy="https://www.alalacampo.com/"
         />
 
