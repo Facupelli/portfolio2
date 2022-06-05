@@ -13,7 +13,7 @@ export default function Freelance() {
           title="ALALA CAMPO"
           subtitle="info website"
           description="The idea was to show the place, the three houses with its amenities and services, and to have a way to reach the place owner. Each house has it's calendar whith available and booked dates. Admin can book dates and view info about reserved dates."
-          techs={["Next.js","React", "Sass", "MongoDB", "Mongoose"]}
+          techs={["Next.js", "React", "Sass", "MongoDB", "Mongoose"]}
           img={alalaCampo}
           github="https://github.com/Facupelli/AlalaCampo"
           deploy="https://www.alalacampo.com/"
@@ -22,8 +22,8 @@ export default function Freelance() {
         <Project
           title="DONUTS HOMERO"
           subtitle="info website"
-          description="Donuts Homero produces and sell donuts. The idea was to show information about the business, promos, place and the menu. Next features: Online delivery, admin account to manage promos"
-          techs={["Next.js", "React", "Sass"]}
+          description="Donuts Homero produces and sell donuts. The idea was to show information about the business, promos, place and the menu. Donuts e-commerce, cart with quantities, mercadopago integration. Next features: admin account to manage promos and data"
+          techs={["Next.js", "Sass", "Redux-toolkit", "Prisma", "PostgreSQL"]}
           img={donutshomero}
           github="https://github.com/Facupelli/donutshomero"
           deploy="https://donutshomero.vercel.app/"
