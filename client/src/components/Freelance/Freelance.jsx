@@ -22,8 +22,15 @@ export default function Freelance() {
         <Project
           title="DONUTS HOMERO"
           subtitle="info website"
-          description="Donuts Homero produces and sell donuts. The idea was to show information about the business, promos, place and the menu. Donuts e-commerce, cart with quantities, mercadopago integration. Next features: admin account to manage promos and data"
-          techs={["Next.js", "Sass", "Redux-toolkit", "Prisma", "PostgreSQL"]}
+          description="Donuts Homero produces and sell donuts. The idea was to show information about the business, promos, the place and the menu. It's a donuts e-commerce, with stock handle and mercadopago integration. Admin can log in and view the orders and stock (set it too) in real time."
+          techs={[
+            "Next.js",
+            "Sass",
+            "Redux-toolkit",
+            "Prisma",
+            "Supabase",
+            "PostgreSQL",
+          ]}
           img={donutshomero}
           github="https://github.com/Facupelli/donutshomero"
           deploy="https://donutshomero.vercel.app/"
