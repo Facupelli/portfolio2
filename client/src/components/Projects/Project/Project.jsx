@@ -11,7 +11,7 @@ export default function Project({
   subtitle,
   github,
   deploy,
-  description,
+  children,
   techs,
   img,
 }) {
@@ -32,9 +32,7 @@ export default function Project({
             </LinkComponent>
           </div>
         </div>
-        <div className={s.description}>
-          <p>{description}</p>
-        </div>
+        <div className={s.description}>{children}</div>
       </div>
       <div className={s.image_container}>
         <img src={img} alt="foto1" />

@@ -30,8 +30,9 @@ export default function Technologies() {
               <li>
                 React <FontAwesomeIcon icon={faReact} />
               </li>
+              <li>Next.js</li>
               <li>Redux</li>
-              <li>SQL</li>
+              <li>PostgreSQL</li>
               <li>MongoDB</li>
             </ul>
           </div>

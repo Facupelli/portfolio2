@@ -12,17 +12,23 @@ export default function Freelance() {
         <Project
           title="ALALA CAMPO"
           subtitle="info website"
-          description="The idea was to show the place, the three houses with its amenities and services, and to have a way to reach the place owner. Each house has it's calendar whith available and booked dates. Admin can book dates and view info about reserved dates."
           techs={["Next.js", "React", "Sass", "MongoDB", "Mongoose"]}
           img={alalaCampo}
           github="https://github.com/Facupelli/AlalaCampo"
           deploy="https://www.alalacampo.com/"
-        />
+        >
+          <p>
+            Designed this site for Alala Campo. It is a place were there are
+            three country houses for rent. Now customers can view the place
+            before they go, check availability and have contact. The owner can
+            access as admin and book dates on the calendar for each house.
+            Responsive design.
+          </p>
+        </Project>
 
         <Project
           title="DONUTS HOMERO"
           subtitle="info website"
-          description="Donuts Homero produces and sell donuts. The idea was to show information about the business, promos, the place and the menu. It's a donuts e-commerce, with stock handle and mercadopago integration. Admin can log in and view the orders and stock (set it too) in real time."
           techs={[
             "Next.js",
             "Sass",
@@ -34,7 +40,15 @@ export default function Freelance() {
           img={donutshomero}
           github="https://github.com/Facupelli/donutshomero"
           deploy="https://donutshomero.vercel.app/"
-        />
+        >
+          <p>
+            This app is a donut e-commerce. It handles stock and users.
+            Customers can now buy donuts online. The company owner has admin
+            access where he can view and control the stock and the orders which
+            are updated in real-time with each purchase made on the site.
+            Responsive design.
+          </p>
+        </Project>
       </div>
     </Section>
   );
