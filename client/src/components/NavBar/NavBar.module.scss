@@ -71,6 +71,10 @@
     display: flex;
     align-items: center;
 
+    &:hover{
+      background-color: $primary_color;
+    }
+
     .logo {
       padding: 1rem;
       text-align: left;
