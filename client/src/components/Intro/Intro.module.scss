@@ -27,7 +27,17 @@
     justify-content: flex-end;
     padding-top: 11rem;
     padding-bottom: 6rem;
-    height: 95vh;
+    height: 80vh;
+  }
+
+  @media (max-width: 380px) {
+    margin: 0 1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 11rem;
+    padding-bottom: 6rem;
+    height: 90vh;
   }
 
   > p {
