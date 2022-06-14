@@ -1,13 +1,17 @@
 @import "../../App.scss";
 
 .container {
-  background-color: $secondary_color;
+  background-color: $primary_color;
   height: 100vh;
   position: fixed;
   z-index: 10;
   width: 15%;
   border-right: 1px solid $rosado;
   transition: all 0.3s ease-in-out 0s;
+
+  &:hover{
+    background-color: $secondary_color;
+  }
 
   .logo {
     color: white;

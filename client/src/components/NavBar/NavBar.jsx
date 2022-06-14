@@ -38,7 +38,7 @@ export default function NavBar({
       </label>
       {/* <div className={s.pages}> */}
       <ul className={s.ul}>
-        <li onClick={() => handleScroll(aboutRef)}>About Me</li>
+        <li onClick={() => handleScroll(aboutRef)}>About</li>
         <li onClick={() => handleScroll(techsRef)}>Technologies</li>
         <li onClick={() => handleScroll(projectsRef)}>Projects</li>
         <li onClick={() => handleScroll(freelanceRef)}>Freelance</li>
