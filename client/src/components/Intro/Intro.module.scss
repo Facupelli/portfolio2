@@ -10,11 +10,24 @@
     @include section_width(1500px);
     height: 50vh;
   }
-
+  
   @media (max-width: 480px) {
     margin: 0 1rem;
-    padding-top: 10rem;
-    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 95vh;
+    padding-bottom: 6rem;
+  }
+
+  @media (max-width: 400px) {
+    margin: 0 1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 11rem;
+    padding-bottom: 6rem;
+    height: 95vh;
   }
 
   > p {

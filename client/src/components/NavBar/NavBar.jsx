@@ -1,4 +1,8 @@
 import React from "react";
+import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+
 import s from "./NavBar.module.scss";
 
 export default function NavBar({
@@ -8,6 +12,12 @@ export default function NavBar({
   freelanceRef,
   contactRef,
 }) {
+  const [showPhoneNav, setShowPhoneNav] = useState(false);
+
+  const handleClickMenu = () => {
+    setShowPhoneNav(!showPhoneNav);
+  };
+
   const handleScroll = (ref) => {
     ref.current.scrollIntoView({ top: 100, behavior: "smooth" });
   };
@@ -18,23 +28,23 @@ export default function NavBar({
         <span>Pelli</span>
         <p>dev</p>
       </div>
-      <div className={s.pages}>
-        <div className={s.page}>
-          <span onClick={() => handleScroll(aboutRef)}>About Me</span>
-        </div>
-        <div className={s.page}>
-          <span onClick={() => handleScroll(techsRef)}>Technologies</span>
-        </div>
-        <div className={s.page}>
-          <span onClick={() => handleScroll(projectsRef)}>Projects</span>
-        </div>
-        <div className={s.page}>
-          <span onClick={() => handleScroll(freelanceRef)}>Freelance</span>
-        </div>
-        <div className={s.page}>
-          <span onClick={() => handleScroll(contactRef)}>Contact</span>
-        </div>
-      </div>
+      <input type="checkbox" name="click" className={s.click} id="click" />
+      <label htmlFor="click" className={s.icon_container}>
+        <FontAwesomeIcon
+          icon={faBars}
+          onClick={handleClickMenu}
+          className={s.bars_icon}
+        />
+      </label>
+      {/* <div className={s.pages}> */}
+      <ul className={s.ul}>
+        <li onClick={() => handleScroll(aboutRef)}>About Me</li>
+        <li onClick={() => handleScroll(techsRef)}>Technologies</li>
+        <li onClick={() => handleScroll(projectsRef)}>Projects</li>
+        <li onClick={() => handleScroll(freelanceRef)}>Freelance</li>
+        <li onClick={() => handleScroll(contactRef)}>Contact</li>
+      </ul>
+      {/* </div> */}
     </nav>
   );
 }

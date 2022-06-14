@@ -5,21 +5,14 @@
   height: 100vh;
   position: fixed;
   width: 15%;
-  box-shadow: 1px 0px 3px $rosado;
-  transition: all .3s ease-in-out 0s;
-
-  &:hover {
-    box-shadow: 2px 0px 4px $rosado;
-  }
-
-  @media (max-width: 480px) {
-    visibility: hidden;
-  }
+  border-right: 1px solid $rosado;
+  transition: all 0.3s ease-in-out 0s;
 
   .logo {
     color: white;
     padding-top: 5rem;
     text-align: center;
+    height: 10%;
 
     span {
       font-weight: 800;
@@ -27,28 +20,87 @@
     }
   }
 
-  .pages {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-    bottom: 70px;
+  .click:checked ~ ul {
+    left: 100px;
+  }
+
+  .icon_container {
+    cursor: pointer;
+    display: none;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  ul {
+    height: 70%;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    text-align: center;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
 
-    .page {
+    li {
+      text-decoration: none;
+      list-style: none;
+      padding: 0;
+      margin: 0;
       color: white;
-      font-weight: 400;
-      cursor: pointer;
+      transition: all 0.3s ease;
 
-      span {
-        transition: all 0.3s ease-in-out 0s;
-
-        &:hover {
-          color: $rosado;
-        }
+      &:hover {
+        cursor: pointer;
+        color: $rosado;
       }
     }
   }
 }
+
+@media (max-width: 480px) {
+  .container {
+    background-color: $primary_color;
+    box-shadow: none;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+
+    .logo {
+      padding: 1rem;
+      text-align: left;
+      height: auto;
+    }
+
+    .icon_container {
+      display: block;
+      color: white;
+      margin-left: auto;
+      margin-right: 1rem;
+
+      .bars_icon {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .ul {
+      position: absolute;
+      z-index: 2;
+      top: 80px;
+      left: 100%;
+      height: 100vmax;
+      width: 100%;
+      background-color: $secondary_color;
+      transition: all 0.3s ease;
+
+      row-gap: 1.5rem;
+      align-items: flex-start;
+      justify-content: flex-start;
+      font-size: 1.5rem;
+      padding: 2rem;
+      border-top: 1px solid $rosado;
+    }
+  }
+}
+
