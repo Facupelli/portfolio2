@@ -1,20 +1,23 @@
 import React from "react";
+import Section from "../Section/Section";
 import s from "./Contact.module.scss";
 
 const Mailto = ({ email, children }) => {
   return (
-    <a target="_blank" href={`mailto:${email}`} rel="noreferrer" className={s.button}>
+    <a
+      target="_blank"
+      href={`mailto:${email}`}
+      rel="noreferrer"
+      className={s.button}
+    >
       {children}
     </a>
   );
 };
 
-export default function Contact({contactRef}) {
+export default function Contact({ contactRef }) {
   return (
-    <div className={s.container} ref={contactRef}>
-      <div className={s.title}>
-        <p>GET IN TOUCH</p>
-      </div>
+    <Section title="Get In Touch">
       <div className={s.info}>
         <p>
           I am currently looking for my first opportunity to contribute on
@@ -25,6 +28,11 @@ export default function Contact({contactRef}) {
           <Mailto email="facundopellicer4@gmail.com">Mail me!</Mailto>
         </div>
       </div>
-    </div>
+    </Section>
+    // <div className={s.container} ref={contactRef} data-scroll-section>
+    //   <div className={s.title}>
+    //     <p>GET IN TOUCH</p>
+    //   </div>
+    // </div>
   );
 }

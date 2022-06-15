@@ -2,12 +2,12 @@ import React from "react";
 import portrait from "../../images/yo.png";
 import Section from "../Section/Section";
 
-import s from "./About.module.scss";
+import "./style.scss";
 
-export default function About({aboutRef}) {
+export default function About({ aboutRef }) {
   return (
     <Section title="About Me">
-      <div className={s.info} ref={aboutRef} style={{ scrollMargin: 100 }}>
+      <div className="info" ref={aboutRef} style={{ scrollMargin: 100 }}>
         <div>
           <p>
             Hello, my name is Facundo and I enjoy creating things since I was a
@@ -26,8 +26,8 @@ export default function About({aboutRef}) {
             and still learning every day.
           </p>
         </div>
-        <div className={s.img_container}>
-          <img src={portrait} alt="me" />
+        <div className="img-container" data-scroll>
+          <img src={portrait} alt="me" data-scroll />
         </div>
       </div>
     </Section>

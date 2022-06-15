@@ -14,17 +14,19 @@
     gap: 2rem;
   }
 
-  .img_container {
+  .img-container {
     width: 100%;
     height: 100%;
-    border: 3px solid $rosado;
     border-radius: 0.2rem;
     position: relative;
-    transition: all 0.5s ease-in-out 0s;
+    border: 3px solid $rosado;
 
-    // @media (min-width: 2000px) {
-    //   // width: 78%;
-    // }
+    clip-path: inset(100% 0% 0% 0%);
+    transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
+
+    &.is-inview {
+      clip-path: inset(-10% -10% -10% -10%);
+    }
 
     @media (max-width: 480px) {
       margin-left: auto;
@@ -43,6 +45,13 @@
       height: 100%;
       border-radius: 0.2rem;
       object-fit: cover;
+
+      clip-path: inset(100% 0% 0% 0%);
+      transition: all 2s cubic-bezier(0.77, 0, 0.175, 1);
+
+      &.is-inview {
+        clip-path: inset(0% 0% 0% 0%);
+      }
 
       @media (max-width: 480px) {
         margin-left: auto;

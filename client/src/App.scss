@@ -13,10 +13,39 @@ $font_color: #dedede;
   margin-right: auto;
 }
 
-@mixin section_title {
-  color: $rosado;
-  font-weight: 700;
-  font-size: 1.8rem;
+.empty-container {
+  height: 20vh;
+  background-color: $primary_color;
+}
+
+.loader-wrapper {
+  font-family: $montserrat;
+  background-color: $primary_color;
+  color: $font_color;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  h1 {
+    font-size: 1.5vw;
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 1.5vw;
+    font-style: italic;
+  }
+}
+
+.absolute {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .app {
@@ -26,14 +55,19 @@ $font_color: #dedede;
   background-color: $primary_color;
 
   @media (max-width: 480px) {
-    display:inline-block;
+    display: block;
   }
 
-  .nav_column {
+  .nav-column {
     background-color: aqua;
   }
 }
 
-.main_column{
+#main-column {
   position: relative;
+
+  @media (max-width: 480px) {
+    // margin-left: 10px;
+    margin-right: 10px;
+  }
 }

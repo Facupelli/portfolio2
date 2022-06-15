@@ -36,7 +36,7 @@ export default function Networks() {
   }, [lastScrollY, memoizedControlNavBar]);
 
   return (
-    <aside className={show ? s.container : s.hidden}>
+    <aside className={show ? s.container : s.hidden} data-scroll-section>
       <div className={s.mail_mobile}>
         <p>facundopellicer4@gmail.com</p>
       </div>

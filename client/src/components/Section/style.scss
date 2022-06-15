@@ -1,0 +1,43 @@
+@import "../../App.scss";
+
+#section-container {
+  @include section_width;
+  padding-bottom: 16rem;
+
+  @media (min-width: 2000px) {
+    @include section_width(1300px);
+  }
+
+  @media (max-width: 480px) {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .title-wrapper,
+  .title-wrapper-1 {
+    margin-bottom: 4rem;
+    position: relative;
+  }
+
+  .title-wrapper {
+    transform: rotate(-2deg);
+  }
+
+  .title-wrapper-1 {
+    transform: rotate(2deg);
+  }
+
+  .title {
+    color: $primary_color;
+    padding: 1rem;
+    font-weight: 800;
+    font-size: 3rem;
+    background-color: $rosado;
+    width: 500%;
+    overflow-x: hidden;
+    text-transform: uppercase;
+    position: absolute;
+    top: -150px;
+    left: 100px;
+  }
+}

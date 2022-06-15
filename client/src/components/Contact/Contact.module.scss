@@ -1,38 +1,17 @@
 @import "../../App.scss";
 
-.container {
-  @include section_width;
-  margin-bottom: 12rem;
-  margin-top: 12rem;
-
-  @media (min-width: 2000px) {
-    @include section_width(1300px)
+.info {
+  color: $font_color;
+  text-align: center;
+  > p {
+    margin-bottom: 0.2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
   }
 
-  @media (max-width: 480px) {
-    margin-left: 2rem;
-    margin-right: 2rem;
+  .button_container {
+    margin: 3rem;
   }
-
-  .title {
-    @include section_title;
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: center;
-    font-size: 2rem;
-  }
-
-  .info {
-    color: $font_color;
-    text-align: center;
-    > p {
-      margin-bottom: 0.2rem;
-    }
-  }
-}
-
-.button_container {
-  margin: 3rem;
 }
 
 .button {

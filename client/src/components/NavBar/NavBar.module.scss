@@ -9,7 +9,7 @@
   border-right: 1px solid $rosado;
   transition: all 0.3s ease-in-out 0s;
 
-  &:hover{
+  &:hover {
     background-color: $secondary_color;
   }
 
@@ -70,8 +70,9 @@
     height: 80px;
     display: flex;
     align-items: center;
+    border-right: none;
 
-    &:hover{
+    &:hover {
       background-color: $primary_color;
     }
 
@@ -112,4 +113,3 @@
     }
   }
 }
-
