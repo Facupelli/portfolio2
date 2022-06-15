@@ -12,7 +12,8 @@ export default function Section({ title, children }) {
         }
       >
         <p
-          className="title"
+          className={ title === "Technologies" || title === "Freelance"
+          ? "title-left" : "title-right"}
           data-scroll
           data-scroll-direction="horizontal"
           data-scroll-speed={

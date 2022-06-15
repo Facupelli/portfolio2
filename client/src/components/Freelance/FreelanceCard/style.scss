@@ -9,6 +9,20 @@
     height: 400px;
     position: relative;
     transition: all 0.5s ease;
+    clip-path: inset(100% 0% 0% 0%);
+    transition: all 3s cubic-bezier(0.77, 0, 0.175, 1);
+
+    @media (max-width: 480px) {
+      clip-path: none;
+    }
+
+    &.is-inview {
+      clip-path: inset(-10% -10% -10% -10%);
+
+      @media (max-width: 480px) {
+        clip-path: none;
+      }
+    }
 
     @media (max-width: 480px) {
       height: auto;
@@ -65,7 +79,7 @@
       gap: 0.5rem;
       margin-bottom: 0.5rem;
 
-      .icon{
+      .icon {
         width: 25px;
         height: 25px;
       }

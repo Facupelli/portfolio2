@@ -7,7 +7,12 @@
   color: $font_color;
   flex-direction: column;
   padding-bottom: 3rem;
-  border-bottom: 1px solid $celeste;
+  border-bottom: 1px solid $font_color;
+  transition: border-bottom 4s cubic-bezier(0.77, 0, 0.175, 1);
+
+  &.is-inview {
+    border-bottom: 1px solid $celeste;
+  }
 
   @media (max-width: 480px) {
     display: flex;
@@ -100,6 +105,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+
   > p {
     transition: all 0.2s ease-in-out 0s;
 

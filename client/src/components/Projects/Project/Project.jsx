@@ -16,7 +16,7 @@ export default function Project({
   img,
 }) {
   return (
-    <div className="project">
+    <div className="project" data-scroll>
       <div className="first_column">
         <div>
           <div className="project_title">

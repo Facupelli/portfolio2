@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
@@ -12,15 +11,9 @@ export default function NavBar({
   freelanceRef,
   contactRef,
 }) {
-  const [showPhoneNav, setShowPhoneNav] = useState(false);
-
-  const handleClickMenu = () => {
-    setShowPhoneNav(!showPhoneNav);
-  };
-
   const handleScroll = (ref) => {
-    console.log(ref)
-    ref.current.scrollIntoView({ top: 100, behavior: "smooth" });
+    // console.log(ref);
+    // ref.current.scrollIntoView({ top: 100, behavior: "smooth" });
   };
 
   return (
@@ -31,11 +24,7 @@ export default function NavBar({
       </div>
       <input type="checkbox" name="click" className={s.click} id="click" />
       <label htmlFor="click" className={s.icon_container}>
-        <FontAwesomeIcon
-          icon={faBars}
-          onClick={handleClickMenu}
-          className={s.bars_icon}
-        />
+        <FontAwesomeIcon icon={faBars} className={s.bars_icon} />
       </label>
       {/* <div className={s.pages}> */}
       <ul className={s.ul}>
