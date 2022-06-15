@@ -1,7 +1,7 @@
 import { useEffect } from "react";
+import imagesLoaded from "imagesloaded";
 import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/src/locomotive-scroll.scss";
-import imagesLoaded from "imagesloaded";
 
 export default function useLocoScroll(start) {
   useEffect(() => {
@@ -28,8 +28,9 @@ export default function useLocoScroll(start) {
       //   class: "is-reveal",
     });
 
+    console.log("new");
+
     imagesLoaded(scrollEl, { background: true }, function () {
-      console.log("update");
       locoScroll.update();
     });
   }, [start]);

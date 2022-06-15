@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import useLocoScroll from "./hooks/useLocoScroll";
 
 //COMPONENTS
@@ -23,27 +23,7 @@ function App() {
 
   const [seeMore, setSeeMore] = useState(false);
 
-  //INIT LOADER
-  const [preloader, setPreloader] = useState(false);
-
-  useLocoScroll(!preloader);
-
-  // const clear = () => {
-  //   setPreloader(false);
-  // };
-
-  // useEffect(() => {
-  //   setTimeout(clear, 3000);
-  // }, []);
-
-  if (preloader) {
-    return (
-      <div className="loader-wrapper absolute">
-        <h1>CARGANDO</h1>
-        <h2>PELLI DEV PORTFOLIO</h2>
-      </div>
-    );
-  }
+  useLocoScroll(true);
 
   return (
     <main className="app">
@@ -76,7 +56,3 @@ function App() {
 }
 
 export default App;
-
-const Empty = () => {
-  return <div className="empty-container"></div>;
-};

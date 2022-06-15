@@ -15,25 +15,25 @@ export default function Intro() {
   return (
     <div id="container" data-scroll-section>
       <div id="icons-wrapper">
-        <div className="code" data-scroll data-scroll-speed="3">
+        <div className="code" data-scroll data-scroll-speed="2">
           <FontAwesomeIcon icon={faCode} className="code-icon" />
         </div>
-        <div className="branch" data-scroll data-scroll-speed="5">
+        <div className="branch" data-scroll data-scroll-speed="6">
           <FontAwesomeIcon icon={faCodeBranch} className="code-icon " />
         </div>
-        <div className="commit" data-scroll data-scroll-speed="2.5">
+        <div className="commit" data-scroll data-scroll-speed="4">
           <FontAwesomeIcon
             icon={faCodeCommit}
             className="code-icon rotate-minus-30"
           />
         </div>
-        <div className="terminal" data-scroll data-scroll-speed="6.5">
+        <div className="terminal" data-scroll data-scroll-speed="9">
           <FontAwesomeIcon icon={faTerminal} className="code-icon " />
         </div>
         <div className="fork " data-scroll data-scroll-speed="3.5">
           <FontAwesomeIcon icon={faCodeFork} className="code-icon rotate-30" />
         </div>
-        <div className="merge" data-scroll data-scroll-speed="4">
+        <div className="merge" data-scroll data-scroll-speed="7">
           <FontAwesomeIcon icon={faCodeMerge} className="code-icon " />
         </div>
         <div className="pull-request" data-scroll data-scroll-speed="5.5">
