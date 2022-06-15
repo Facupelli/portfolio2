@@ -2,10 +2,11 @@
 
 @media (max-width: 480px) {
   #container {
-    margin: 0 1rem;
+    margin: 0rem;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    align-items: flex-start;
     height: 95vh;
     margin-bottom: 6rem;
 
@@ -18,6 +19,7 @@
     }
 
     #intro-wrapper {
+      left: 0;
       .hi {
         font-size: 0.9rem;
       }
@@ -28,10 +30,6 @@
 
       .dev {
         font-size: 2.5rem;
-        // background: -webkit-linear-gradient(180deg, #f472b6 50%, #67e8f9);
-        // background-clip: content-box;
-        // -webkit-background-clip: text;
-        // -webkit-text-fill-color: transparent;
       }
 
       .about {
@@ -90,7 +88,6 @@
   .dev {
     color: #0c0c0c;
     font-weight: 700;
-    display: inline-block;
     font-size: 4rem;
     // background: -webkit-linear-gradient(90deg, #67e8f9, #f472b6);
     background: -webkit-linear-gradient(180deg, #f472b6 50%, #67e8f9);

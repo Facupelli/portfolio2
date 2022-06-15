@@ -1,16 +1,39 @@
 @import "../../App.scss";
 
+@media (max-width: 480px) {
+  #section-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    .title-wrapper,
+    .title-wrapper-1 {
+      .title-right,
+      .title-left {
+        width: auto;
+        top: -150px;
+        left: 0;
+        font-size: 2rem;
+      }
+
+      .title-right {
+        padding: 1rem;
+      }
+
+      .title-left {
+        left: -50%;
+        padding: 1rem;
+        text-align: left;
+      }
+    }
+  }
+}
+
 #section-container {
   @include section_width;
   padding-bottom: 16rem;
 
   @media (min-width: 2000px) {
     @include section_width(1300px);
-  }
-
-  @media (max-width: 480px) {
-    margin-left: 2rem;
-    margin-right: 2rem;
   }
 
   .title-wrapper,
@@ -39,22 +62,11 @@
     background-color: $rosado;
     font-size: 3rem;
     font-weight: 800;
-
-    @media (max-width: 480px) {
-      width: auto;
-      top: -150px;
-      left: 0;
-      font-size: 2rem;
-    }
   }
 
   .title-right {
     padding-left: 300px;
     left: 100px;
-
-    @media (max-width: 480px) {
-      padding: 1rem;
-    }
 
     @media (min-width: 2000px) {
       padding-left: 800px;
@@ -65,12 +77,6 @@
     left: -400%;
     text-align: right;
     padding-right: 400px;
-
-    @media (max-width: 480px) {
-      left: -50%;
-      padding: 1rem;
-      text-align: left;
-    }
 
     @media (min-width: 2000px) {
       padding-right: 900px;
