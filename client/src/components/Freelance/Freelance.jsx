@@ -1,5 +1,4 @@
 import React from "react";
-import Project from "../Projects/Project/Project";
 import alalaCampo from "../../images/alalaCasa1.png";
 import alalaHome from "../../images/alalaHome.png";
 import donutshomero from "../../images/donutshomero.png";

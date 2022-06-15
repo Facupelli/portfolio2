@@ -21,7 +21,7 @@
       height: 400px;
       object-fit: cover;
       object-position: 0% 0%;
-      clip-path: polygon(0 0, 100% 0, 50% 50%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0, 75% 25%, 50% 50%, 25% 75%, 0 100%);
       transition: all 0.4s ease;
 
       @media (max-width: 480px) {
@@ -30,7 +30,7 @@
       }
 
       &:hover {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 70%, 100% 100%, 70% 100%, 0 100%);
         z-index: 2;
       }
     }
@@ -42,7 +42,7 @@
       height: 400px;
       object-fit: cover;
       object-position: 100% 0%;
-      clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0% 100%);
+      clip-path: polygon(50% 50%, 75% 25%, 100% 0, 100% 100%, 0 100%, 25% 75%);
       transition: all 0.4s ease;
 
       @media (max-width: 480px) {
@@ -50,7 +50,7 @@
       }
 
       &:hover {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 30% 0, 100% 0, 100% 100%, 0 100%, 0 30%);
         z-index: 2;
       }
     }
