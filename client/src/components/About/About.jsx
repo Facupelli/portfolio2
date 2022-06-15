@@ -4,10 +4,10 @@ import Section from "../Section/Section";
 
 import s from "./About.module.scss";
 
-export default function About() {
+export default function About({aboutRef}) {
   return (
     <Section title="About Me">
-      <div className={s.info}>
+      <div className={s.info} ref={aboutRef} style={{ scrollMargin: 100 }}>
         <div>
           <p>
             Hello, my name is Facundo and I enjoy creating things since I was a

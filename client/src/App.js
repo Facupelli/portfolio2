@@ -33,22 +33,12 @@ function App() {
       <div className="main_column">
         <Networks />
         <Intro />
-        <div ref={aboutRef} style={{ scrollMargin: 100 }}>
-          <About />
-        </div>
-        <div ref={techsRef} style={{ scrollMargin: 100 }}>
-          <Technologies />
-        </div>
-        <div ref={projectsRef} style={{ scrollMargin: 100 }}>
-          <Projects setSeeMore={setSeeMore} seeMore={seeMore} />
-        </div>
+        <About aboutRef={aboutRef} />
+        <Technologies techsRef={techsRef} />
+        <Projects projectsRef={projectsRef} setSeeMore={setSeeMore} seeMore={seeMore} />
         {seeMore && <MoreProjects />}
-        <div ref={freelanceRef} style={{ scrollMargin: 100 }}>
-          <Freelance />
-        </div>
-        <div ref={contactRef} style={{ scrollMargin: 100 }}>
-          <Contact />
-        </div>
+        <Freelance freelanceRef={freelanceRef} />
+        <Contact contactRef={contactRef} />
       </div>
     </main>
   );

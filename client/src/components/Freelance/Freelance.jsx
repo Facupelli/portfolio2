@@ -7,10 +7,10 @@ import Section from "../Section/Section";
 import FreelanceCard from "./FreelanceCard/FreelanceCard";
 import s from "./Freelance.module.scss";
 
-export default function Freelance() {
+export default function Freelance({freelanceRef}) {
   return (
     <Section title="Freelance">
-      <div className={s.works}>
+      <div className={s.works} ref={freelanceRef} style={{ scrollMargin: 100 }}>
         {/* <Project
           title="ALALA CAMPO"
           subtitle="info website"

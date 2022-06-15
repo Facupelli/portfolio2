@@ -9,10 +9,10 @@ import {
 import s from "./Technologies.module.scss";
 import Section from "../Section/Section";
 
-export default function Technologies() {
+export default function Technologies({techsRef}) {
   return (
     <Section title="Technologies">
-      <div className={s.grid}>
+      <div className={s.grid} ref={techsRef} style={{ scrollMargin: 100 }}>
         <div className={s.info}>
           <p>Here are few technologies I am familiarized with:</p>
           <div className={s.list_container}>

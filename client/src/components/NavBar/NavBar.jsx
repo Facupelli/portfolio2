@@ -19,6 +19,7 @@ export default function NavBar({
   };
 
   const handleScroll = (ref) => {
+    console.log(ref)
     ref.current.scrollIntoView({ top: 100, behavior: "smooth" });
   };
 

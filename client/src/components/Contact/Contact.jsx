@@ -9,9 +9,9 @@ const Mailto = ({ email, children }) => {
   );
 };
 
-export default function Contact() {
+export default function Contact({contactRef}) {
   return (
-    <div className={s.container}>
+    <div className={s.container} ref={contactRef}>
       <div className={s.title}>
         <p>GET IN TOUCH</p>
       </div>

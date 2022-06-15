@@ -4,14 +4,14 @@ import cuyo from "../../images/cuyo.png";
 import s from "./Projects.module.scss";
 import Section from "../Section/Section";
 
-export default function Projects({ setSeeMore, seeMore }) {
+export default function Projects({ projectsRef, setSeeMore, seeMore }) {
   const handleSeeMore = () => {
     setSeeMore(true);
   };
 
   return (
     <Section title="Projects">
-      <div className={s.projects_container}>
+      <div className={s.projects_container} ref={projectsRef} style={{ scrollMargin: 100 }}>
         <Project
           title="SERVICE E-COMMERCE"
           subtitle="buy and offer services"
