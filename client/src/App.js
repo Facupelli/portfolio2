@@ -25,7 +25,7 @@ function App() {
     if (locoScroll) {
       locoScroll.current.update();
     }
-  }, [locoScroll]);
+  }, [locoScroll, seeMore]);
 
   console.log(locoScroll);
 
