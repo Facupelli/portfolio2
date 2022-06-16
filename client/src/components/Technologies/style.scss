@@ -1,0 +1,121 @@
+@import "../../App.scss";
+
+#grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  @media (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info {
+    margin-top: 2rem;
+    color: white;
+    border-right: 1px solid $rosado;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 480px) {
+      border-right: none;
+      padding: 0;
+    }
+
+    .list-container {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      margin-top: 1rem;
+      margin-left: 2rem;
+      color: $font_color;
+
+      @media (max-width: 480px) {
+        display: flex;
+        gap: 2rem;
+        margin-top: 0rem;
+        flex-wrap: wrap;
+      }
+
+      @media (min-width: 2000px) {
+        grid-template-columns: 40% 40%;
+      }
+
+      ul {
+        list-style: none;
+
+        li {
+          margin-bottom: 0.5rem;
+
+          &::before {
+            content: "-";
+            color: $rosado;
+            font-weight: 900;
+            display: inline-block;
+            width: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.js,
+.type,
+.node,
+.express,
+.react,
+.next,
+.redux,
+.psql,
+.mongo,
+.py,
+.deno,
+.dj,
+.web3 {
+  opacity: 0;
+
+  &.is-inview {
+    opacity: 100%;
+  }
+}
+
+.js {
+  transition: opacity 1s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.type {
+  transition: opacity 1.3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.node {
+  transition: opacity 1.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.express {
+  transition: opacity 1.9s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.react {
+  transition: opacity 2.2s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.next {
+  transition: opacity 2.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.redux {
+  transition: opacity 2.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.psql {
+  transition: opacity 3.1s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.mongo {
+  transition: opacity 3.4s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.py {
+  transition: opacity 3.7s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.deno {
+  transition: opacity 4s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.dj {
+  transition: opacity 4.3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.web3 {
+  transition: opacity 4.6s cubic-bezier(0.77, 0, 0.175, 1);
+}

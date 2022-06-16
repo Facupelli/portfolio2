@@ -6,48 +6,60 @@ import {
   faNodeJs,
   faPython,
 } from "@fortawesome/free-brands-svg-icons";
-import s from "./Technologies.module.scss";
 import Section from "../Section/Section";
+import "./style.scss";
 
-export default function Technologies({techsRef}) {
+export default function Technologies({ techsRef }) {
   return (
     <Section title="Technologies">
-      <div className={s.grid} ref={techsRef} style={{ scrollMargin: 100 }}>
-        <div className={s.info}>
+      <div id="grid" ref={techsRef} style={{ scrollMargin: 100 }}>
+        <div className="info">
           <p>Here are few technologies I am familiarized with:</p>
-          <div className={s.list_container}>
+          <div className="list-container">
             <ul>
-              <li>
+              <li data-scroll className="js">
                 Javascript <FontAwesomeIcon icon={faJs} />
               </li>
-              <li>Typescript</li>
-              <li>
+              <li data-scroll className="type">
+                Typescript
+              </li>
+              <li data-scroll className="node">
                 Node.js <FontAwesomeIcon icon={faNodeJs} />
               </li>
-              <li>Express</li>
+              <li data-scroll className="express">
+                Express
+              </li>
             </ul>
             <ul>
-              <li>
+              <li data-scroll className="react">
                 React <FontAwesomeIcon icon={faReact} />
               </li>
-              <li>Next.js</li>
-              <li>Redux</li>
-              <li>PostgreSQL</li>
-              <li>MongoDB</li>
+              <li data-scroll className="next">
+                Next.js
+              </li>
+              <li data-scroll className="redux">
+                Redux
+              </li>
+              <li data-scroll className="psql">
+                PostgreSQL
+              </li>
+              <li data-scroll className="mongo">
+                MongoDB
+              </li>
             </ul>
           </div>
         </div>
 
-        <div className={s.info}>
+        <div className="info">
           <p>And here are few technologies I want to learn:</p>
-          <div className={s.list_container}>
+          <div className="list-container" data-scroll>
             <ul>
-              <li>
+              <li data-scroll className="py">
                 Python <FontAwesomeIcon icon={faPython} />
               </li>
-              <li>Deno</li>
-              <li>Django</li>
-              <li>Web3</li>
+              <li data-scroll className="deno">Deno</li>
+              <li data-scroll className="dj">Django</li>
+              <li data-scroll className="web3">Web3</li>
             </ul>
           </div>
         </div>
