@@ -1,6 +1,6 @@
 @import "../../App.scss";
 
-.projects_container {
+#projects-section {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@
     gap: 10rem;
   }
 }
-.button_container {
+.button-container {
   display: flex;
   justify-content: center;
   margin-top: 8rem;

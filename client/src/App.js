@@ -1,5 +1,6 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import useLocoScroll from "./hooks/useLocoScroll";
+import "locomotive-scroll/src/locomotive-scroll.scss";
 
 //COMPONENTS
 import Intro from "./components/Intro/Intro";
@@ -15,41 +16,33 @@ import MoreProjects from "./components/Projects/MoreProjects/MoreProjects";
 import "./App.scss";
 
 function App() {
-  const aboutRef = useRef(null);
-  const techsRef = useRef(null);
-  const projectsRef = useRef(null);
-  const freelanceRef = useRef(null);
-  const contactRef = useRef(null);
-
   const [seeMore, setSeeMore] = useState(false);
+  const locoScroll = useRef(null);
 
-  useLocoScroll(true);
+  useLocoScroll(true, locoScroll);
+
+  useEffect(() => {
+    if (locoScroll) {
+      locoScroll.current.update();
+    }
+  }, [locoScroll]);
+
+  console.log(locoScroll);
 
   return (
-    <main className="app">
+    <main className="app" data-scroll-container>
       <div className="nav-column">
-        <NavBar
-          aboutRef={aboutRef}
-          techsRef={techsRef}
-          projectsRef={projectsRef}
-          freelanceRef={freelanceRef}
-          contactRef={contactRef}
-        />
+        <NavBar locoScroll={locoScroll && locoScroll} />
       </div>
-      <div id="main-column" data-scroll-container>
+      <div id="main-column">
         <Networks />
-        {/* <Empty /> */}
         <Intro />
-        <About aboutRef={aboutRef} />
-        <Technologies techsRef={techsRef} />
-        <Projects
-          projectsRef={projectsRef}
-          setSeeMore={setSeeMore}
-          seeMore={seeMore}
-        />
+        <About />
+        <Technologies />
+        <Projects setSeeMore={setSeeMore} seeMore={seeMore} />
         {seeMore && <MoreProjects />}
-        <Freelance freelanceRef={freelanceRef} />
-        <Contact contactRef={contactRef} />
+        <Freelance />
+        <Contact />
       </div>
     </main>
   );

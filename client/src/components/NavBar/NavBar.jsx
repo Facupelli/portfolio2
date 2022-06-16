@@ -5,19 +5,18 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import s from "./NavBar.module.scss";
 
 export default function NavBar({
-  aboutRef,
-  techsRef,
-  projectsRef,
-  freelanceRef,
-  contactRef,
+  locoScroll,
 }) {
-  const handleScroll = (ref) => {
-    // console.log(ref);
-    // ref.current.scrollIntoView({ top: 100, behavior: "smooth" });
+  const handleScroll = (id) => {
+    locoScroll.current.scrollTo(document.querySelector(id), {
+      offset: -200,
+      duration: 2000,
+      easing: [0.77, 0, 0.175, 1],
+    });
+    // locoScroll.update()
   };
-
   return (
-    <nav className={s.container}>
+    <nav className={s.container} data-scroll-section>
       <div className={s.logo}>
         <span>Pelli</span>
         <p>dev</p>
@@ -26,15 +25,17 @@ export default function NavBar({
       <label htmlFor="click" className={s.icon_container}>
         <FontAwesomeIcon icon={faBars} className={s.bars_icon} />
       </label>
-      {/* <div className={s.pages}> */}
-      <ul className={s.ul}>
-        <li onClick={() => handleScroll(aboutRef)}>About</li>
-        <li onClick={() => handleScroll(techsRef)}>Technologies</li>
-        <li onClick={() => handleScroll(projectsRef)}>Projects</li>
-        <li onClick={() => handleScroll(freelanceRef)}>Freelance</li>
-        <li onClick={() => handleScroll(contactRef)}>Contact</li>
-      </ul>
-      {/* </div> */}
+      {locoScroll && (
+        <ul className={s.ul}>
+          <li onClick={() => handleScroll("#about-section")} data-scroll-to>
+            About
+          </li>
+          <li onClick={() => handleScroll("#techs-section")}>Technologies</li>
+          <li onClick={() => handleScroll("#projects-section")}>Projects</li>
+          <li onClick={() => handleScroll("#freelance-section")}>Freelance</li>
+          <li onClick={() => handleScroll("#contact-section")}>Contact</li>
+        </ul>
+      )}
     </nav>
   );
 }

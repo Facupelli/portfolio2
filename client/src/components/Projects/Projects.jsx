@@ -1,8 +1,8 @@
 import React from "react";
 import Project from "./Project/Project";
 import cuyo from "../../images/cuyo.png";
-import s from "./Projects.module.scss";
 import Section from "../Section/Section";
+import"./style.scss";
 
 export default function Projects({ projectsRef, setSeeMore, seeMore }) {
   const handleSeeMore = () => {
@@ -11,7 +11,7 @@ export default function Projects({ projectsRef, setSeeMore, seeMore }) {
 
   return (
     <Section title="Projects">
-      <div className={s.projects_container} ref={projectsRef} style={{ scrollMargin: 100 }}>
+      <div id="projects-section" ref={projectsRef} style={{ scrollMargin: 100 }}>
         <Project
           title="SERVICE E-COMMERCE"
           subtitle="buy and offer services"
@@ -85,7 +85,7 @@ export default function Projects({ projectsRef, setSeeMore, seeMore }) {
       </div>
 
       {!seeMore && (
-        <div className={s.button_container}>
+        <div className="button-container">
           <button onClick={handleSeeMore}>SEE MORE</button>
         </div>
       )}

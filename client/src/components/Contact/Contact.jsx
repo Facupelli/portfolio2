@@ -1,6 +1,6 @@
 import React from "react";
 import Section from "../Section/Section";
-import s from "./Contact.module.scss";
+import "./style.scss";
 
 const Mailto = ({ email, children }) => {
   return (
@@ -8,7 +8,7 @@ const Mailto = ({ email, children }) => {
       target="_blank"
       href={`mailto:${email}`}
       rel="noreferrer"
-      className={s.button}
+      className="button"
     >
       {children}
     </a>
@@ -18,7 +18,7 @@ const Mailto = ({ email, children }) => {
 export default function Contact({ contactRef }) {
   return (
     <Section title="Get In Touch">
-      <div className={s.info}>
+      <div id="contact-section">
         <p data-scroll data-scroll-delay="0.04" data-scroll-speed="2">
           I am currently looking for my first opportunity to contribute on
           challenging projects.
@@ -27,7 +27,7 @@ export default function Contact({ contactRef }) {
           I am available to work!
         </p>
         <div
-          className={s.button_container}
+          className="button-container"
           data-scroll
           data-scroll-delay="0.1"
           data-scroll-speed="2"
@@ -36,10 +36,5 @@ export default function Contact({ contactRef }) {
         </div>
       </div>
     </Section>
-    // <div className={s.container} ref={contactRef} data-scroll-section>
-    //   <div className={s.title}>
-    //     <p>GET IN TOUCH</p>
-    //   </div>
-    // </div>
   );
 }

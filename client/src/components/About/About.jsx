@@ -7,7 +7,7 @@ import "./style.scss";
 export default function About({ aboutRef }) {
   return (
     <Section title="About Me">
-      <div className="info" ref={aboutRef} style={{ scrollMargin: 100 }}>
+      <div id="about-section" ref={aboutRef} style={{ scrollMargin: 100 }}>
         <div>
           <p>
             Hello, my name is Facundo and I enjoy creating things since I was a

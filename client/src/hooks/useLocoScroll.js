@@ -3,7 +3,7 @@ import imagesLoaded from "imagesloaded";
 import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/src/locomotive-scroll.scss";
 
-export default function useLocoScroll(start) {
+export default function useLocoScroll(start, locoScroll) {
   useEffect(() => {
     if (!start) {
       return;
@@ -11,7 +11,7 @@ export default function useLocoScroll(start) {
 
     const scrollEl = document.querySelector("#main-column");
 
-    const locoScroll = new LocomotiveScroll({
+    locoScroll.current = new LocomotiveScroll({
       el: scrollEl,
       smooth: true,
       multiplier: 1,
@@ -20,18 +20,17 @@ export default function useLocoScroll(start) {
         smooth: true,
         direction: "vertical",
       },
-      // tablet: {
-      //   smooth: true,
-      //   breakpoint: 0,
-      // },
-      // lerp: 0.1,
-      //   class: "is-reveal",
+      tablet: {
+        smooth: true,
+      },
     });
-
-    console.log("new");
 
     imagesLoaded(scrollEl, { background: true }, function () {
-      locoScroll.update();
+      locoScroll.current.update();
     });
-  }, [start]);
+
+    return () => {
+      locoScroll.current?.destroy();
+    };
+  }, [start, locoScroll]);
 }
