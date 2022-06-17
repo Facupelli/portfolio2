@@ -10,6 +10,15 @@
   @media (min-width: 2000px) {
     gap: 10rem;
   }
+
+  ul {
+    list-style-type: "◆ ";
+    padding-left: .5rem;
+    li {
+      text-decoration: none;
+      // list-style: none;
+    }
+  }
 }
 .button-container {
   display: flex;
