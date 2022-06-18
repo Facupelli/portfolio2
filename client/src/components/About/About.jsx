@@ -8,7 +8,7 @@ export default function About({ aboutRef }) {
   return (
     <Section title="About Me">
       <div id="about-section" ref={aboutRef} style={{ scrollMargin: 100 }}>
-        <div>
+        <div className="description" data-scroll>
           <p>
             Hello, my name is Facundo and I enjoy creating things since I was a
             child. I have always been passionate about technology and creating

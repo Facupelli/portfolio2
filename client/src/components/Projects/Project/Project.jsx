@@ -19,7 +19,7 @@ export default function Project({
     <div className="project" data-scroll>
       <div className="first_column">
         <div>
-          <div className="project_title">
+          <div className="project-title" data-scroll>
             <p>{title}</p>
             <p>{subtitle}</p>
           </div>
@@ -32,7 +32,9 @@ export default function Project({
             </LinkComponent>
           </div>
         </div>
-        <div className="description">{children}</div>
+        <div className="description" data-scroll>
+          {children}
+        </div>
       </div>
       <div className="image_container">
         <img src={img} alt="foto1" data-scroll />
