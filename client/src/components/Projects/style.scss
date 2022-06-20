@@ -11,6 +11,10 @@
     gap: 10rem;
   }
 
+  @media (max-width: 480px) {
+    gap: 4rem;
+  }
+
   ul {
     list-style-type: "◆ ";
     padding-left: .5rem;

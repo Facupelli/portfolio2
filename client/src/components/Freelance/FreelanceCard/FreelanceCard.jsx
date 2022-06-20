@@ -18,6 +18,7 @@ export default function FreelanceCard({
   return (
     <article className="container">
       <div className="links_mobile">
+        <h1 className="title-mobile">{title}</h1>
         <LinkComponent href={github}>
           <FontAwesomeIcon icon={faGithub} className="icon" />
         </LinkComponent>

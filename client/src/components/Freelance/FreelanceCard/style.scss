@@ -11,11 +11,10 @@
     font-size: 1.3rem;
     color: $rosado;
     font-weight: 700;
+  }
 
-    @media (max-width: 480px) {
-      font-size: 1rem;
-      top: -20px;
-    }
+  .title-mobile {
+    display: none;
   }
 
   .img_container {
@@ -25,24 +24,12 @@
     clip-path: inset(100% 0% 0% 0%);
     transition: all 3s cubic-bezier(0.77, 0, 0.175, 1);
 
-    @media (max-width: 480px) {
-      clip-path: none;
-    }
-
     @media (min-width: 2000px) {
       height: 600px;
     }
 
     &.is-inview {
       clip-path: inset(-10% -10% -10% -10%);
-
-      @media (max-width: 480px) {
-        clip-path: none;
-      }
-    }
-
-    @media (max-width: 480px) {
-      height: auto;
     }
 
     .img1 {
@@ -54,11 +41,6 @@
       object-position: 0% 0%;
       clip-path: polygon(0 0, 100% 0, 75% 25%, 50% 50%, 25% 75%, 0 100%);
       transition: all 0.4s ease;
-
-      @media (max-width: 480px) {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-        object-fit: contain;
-      }
 
       @media (min-width: 2000px) {
         height: 600px;
@@ -80,10 +62,6 @@
       clip-path: polygon(50% 50%, 75% 25%, 100% 0, 100% 100%, 0 100%, 25% 75%);
       transition: all 0.4s ease;
 
-      @media (max-width: 480px) {
-        display: none;
-      }
-
       @media (min-width: 2000px) {
         height: 600px;
       }
@@ -97,18 +75,6 @@
 
   .links_mobile {
     display: none;
-
-    @media (max-width: 480px) {
-      display: flex;
-      justify-content: flex-end;
-      gap: 0.5rem;
-      margin-bottom: 0.5rem;
-
-      .icon {
-        width: 25px;
-        height: 25px;
-      }
-    }
   }
 
   .links {
@@ -118,20 +84,12 @@
     gap: 0.5rem;
     right: 25px;
 
-    @media (max-width: 480px) {
-      display: none;
-    }
-
     .icon {
       width: 30px;
       height: 30px;
       color: $primary_color;
       filter: drop-shadow(1px 1px 2px $primary_color);
       transition: all 0.3s ease;
-
-      @media (max-width: 480px) {
-        color: white;
-      }
 
       &:hover {
         color: $rosado;
@@ -155,12 +113,6 @@
 
     &:hover {
       box-shadow: none;
-    }
-
-    @media (max-width: 480px) {
-      position: relative;
-      bottom: -80px;
-      padding: 0.5rem;
     }
   }
 
@@ -191,6 +143,78 @@
     li {
       text-decoration: none;
       list-style: none;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin-bottom: 0rem;
+
+    .title {
+      display: none;
+    }
+
+    .title-mobile {
+      display: block;
+      margin-right: auto;
+      font-size: 1.1rem;
+      color: $font_color;
+      font-weight: 600;
+    }
+
+    .img_container {
+      height: 180px;
+      clip-path: inset(100% 0% 0% 0%);
+      transition: all 3s cubic-bezier(0.77, 0, 0.175, 1);
+
+      &.is-inview {
+        clip-path: inset(0% 0% 0% 0%);
+      }
+
+      .img1 {
+        clip-path: none;
+        object-fit: contain;
+      }
+
+      .img2 {
+        display: none;
+      }
+    }
+
+    .links_mobile {
+      display: flex;
+      justify-content: flex-end;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+
+      .icon {
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    .links {
+      display: none;
+
+      .icon {
+        color: white;
+      }
+    }
+
+    .description_container {
+      position: relative;
+      bottom: 55px;
+      padding: 0.5rem;
+      width: 85%;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    .description_container {
+      bottom: 80px;
     }
   }
 }
