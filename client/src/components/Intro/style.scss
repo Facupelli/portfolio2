@@ -24,7 +24,7 @@
       .hi {
         font-size: 0.9rem;
       }
-      
+
       .name {
         font-size: 3rem;
       }
@@ -79,6 +79,10 @@
     color: #dedede;
     font-weight: 700;
     font-size: 4.5rem;
+    background: -webkit-linear-gradient(180deg, #f3f3f3 50%, #dedede);
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
     @media (min-width: 2000px) {
       font-size: 8rem;
