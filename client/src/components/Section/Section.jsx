@@ -11,7 +11,7 @@ export default function Section({ title, children }) {
             : "title-wrapper"
         }
       >
-        <p
+        <h1
           className={ title === "Technologies" || title === "Freelance"
           ? "title-left" : "title-right"}
           data-scroll
@@ -22,7 +22,7 @@ export default function Section({ title, children }) {
           data-scroll-taget="#section-container"
         >
           .{title}
-        </p>
+        </h1>
       </div>
       {children}
     </section>

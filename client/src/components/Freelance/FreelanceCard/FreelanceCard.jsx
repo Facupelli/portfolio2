@@ -9,13 +9,14 @@ import "./style.scss";
 export default function FreelanceCard({
   img1,
   img2,
+  title,
   children,
   techs,
   github,
   deploy,
 }) {
   return (
-    <div className="container">
+    <article className="container">
       <div className="links_mobile">
         <LinkComponent href={github}>
           <FontAwesomeIcon icon={faGithub} className="icon" />
@@ -25,10 +26,11 @@ export default function FreelanceCard({
         </LinkComponent>
       </div>
       <div className="img_container" data-scroll>
-        <img src={img1} alt="project" className="img1"  />
-        <img src={img2} alt="project" className="img2"  />
+        <img src={img1} alt="project" className="img1" />
+        <img src={img2} alt="project" className="img2" />
       </div>
       <div className="description_container">
+        <h1 className="title">{title}</h1>
         <div className="links">
           <LinkComponent href={github}>
             <FontAwesomeIcon icon={faGithub} className="icon" />
@@ -44,6 +46,6 @@ export default function FreelanceCard({
           ))}
         </ul>
       </div>
-    </div>
+    </article>
   );
 }

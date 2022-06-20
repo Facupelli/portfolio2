@@ -18,6 +18,7 @@ export default function Freelance({ freelanceRef }) {
         <FreelanceCard
           img1={alalaHome}
           img2={alalaCampo}
+          title="Alala Campo"
           techs={["Next.js", "React", "Sass", "MongoDB", "Mongoose"]}
           github="https://github.com/Facupelli/AlalaCampo"
           deploy="https://www.alalacampo.com/"
@@ -34,6 +35,7 @@ export default function Freelance({ freelanceRef }) {
         <FreelanceCard
           img1={donutshomero}
           img2={donutshomerocart}
+          title="Donuts Homero"
           techs={[
             "Next.js",
             "Sass",

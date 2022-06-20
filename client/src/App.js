@@ -30,11 +30,11 @@ function App() {
   console.log(locoScroll);
 
   return (
-    <main className="app" data-scroll-container>
-      <div className="nav-column">
+    <div className="app" data-scroll-container>
+      <header className="nav-column">
         <NavBar locoScroll={locoScroll && locoScroll} />
-      </div>
-      <div id="main-column">
+      </header>
+      <main id="main-column">
         <Networks />
         <Intro />
         <About />
@@ -43,8 +43,8 @@ function App() {
         {seeMore && <MoreProjects />}
         <Freelance />
         <Contact />
-      </div>
-    </main>
+      </main>
+    </div>
   );
 }
 

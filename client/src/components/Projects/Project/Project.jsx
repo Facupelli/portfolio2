@@ -16,11 +16,11 @@ export default function Project({
   img,
 }) {
   return (
-    <div className="project" data-scroll>
+    <article className="project" data-scroll>
       <div className="first_column">
         <div>
           <div className="project-title" data-scroll>
-            <p>{title}</p>
+            <h1>{title}</h1>
             <p>{subtitle}</p>
           </div>
           <div className="links">
@@ -42,6 +42,6 @@ export default function Project({
       <div className="techs">
         {techs && techs.map((tech) => <p key={tech}>{tech}</p>)}
       </div>
-    </div>
+    </article>
   );
 }

@@ -30,6 +30,7 @@
       }
     }
     .project-title {
+      font-size: 1rem;
       @media (max-width: 480px) {
         transform: translate(-120%, 0);
         transition: transform 1.3s cubic-bezier(0.27, 0, 0.275, 1);

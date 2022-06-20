@@ -13,7 +13,7 @@ import "./style.scss";
 
 export default function Intro() {
   return (
-    <div id="container" data-scroll-section>
+    <section id="container" data-scroll-section>
       <div id="icons-wrapper">
         <div className="code" data-scroll data-scroll-speed="2">
           <FontAwesomeIcon icon={faCode} className="code-icon" />
@@ -45,7 +45,7 @@ export default function Intro() {
 
         <div id="intro-wrapper">
           <p className="hi">Hi, I'm</p>
-          <p className="name">FACUNDO PELLICER.</p>
+          <h1 className="name">FACUNDO PELLICER.</h1>
           <p
             className="dev"
             data-scroll
@@ -61,6 +61,6 @@ export default function Intro() {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
