@@ -24,7 +24,7 @@ export default function Freelance({ freelanceRef }) {
           deploy="https://www.alalacampo.com/"
         >
           <p className="children">
-            Designed this site for Alala Campo. It is a place were there are
+            Designed this website for Alala Campo. It is a place where there are
             three country houses for rent. Now customers can view the place
             before they go, check availability and have contact. The owner can
             access as admin and book dates on the calendar for each house.
@@ -48,11 +48,11 @@ export default function Freelance({ freelanceRef }) {
           deploy="https://donutshomero.vercel.app/"
         >
           <p className="children">
-            This app is a donut e-commerce. It handles stock and users.
-            Customers can now buy donuts online. The company owner has admin
-            access where he can view and control the stock and the orders which
-            are updated in real-time with each purchase made on the site.
-            Responsive design.
+            This app is a donut <strong>e-commerce</strong>. It handles stock
+            and users. Customers can now buy donuts online. The company owner
+            has admin access where he can view and control the stock and the
+            orders which are updated in real-time with each purchase made on the
+            site. Mercadopago and Whatsapp API integration. Responsive design.
           </p>
         </FreelanceCard>
       </div>

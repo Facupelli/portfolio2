@@ -75,8 +75,12 @@
       z-index: 5;
       width: 50%;
       top: 50%;
-      transform: translate(-150%, -50%);
+      transform: translate(-170%, -50%);
       transition: transform 2s cubic-bezier(0.77, 0, 0.175, 1);
+
+      @media (min-width: 1900px) {
+        transform: translate(-220%, -50%);
+      }
 
       &.is-inview {
         transform: translate(0, -50%);

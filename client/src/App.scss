@@ -7,7 +7,7 @@ $celeste: #67e8f9;
 $rosado: #f472b6;
 $font_color: #dedede;
 
-@mixin section_width($width: 900px) {
+@mixin section_width($width: 950px) {
   max-width: $width;
   margin-left: auto;
   margin-right: auto;
@@ -63,7 +63,7 @@ $font_color: #dedede;
 .app {
   font-family: $montserrat;
   display: grid;
-  grid-template-columns: 15% 85%;
+  grid-template-columns: 70px 100%;
   background-color: $primary_color;
 
   @media (max-width: 480px) {
@@ -72,14 +72,15 @@ $font_color: #dedede;
 
   .nav-column {
     background-color: $primary_color;
+    position: relative;
   }
 }
 
 #main-column {
   position: relative;
 
-  @media (max-width: 480px) {
-    margin-left: 25px;
-    margin-right: 25px;
-  }
+  // @media (max-width: 480px) {
+  //   margin-left: 25px;
+  //   margin-right: 25px;
+  // }
 }

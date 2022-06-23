@@ -4,9 +4,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import s from "./NavBar.module.scss";
 
-export default function NavBar({
-  locoScroll,
-}) {
+export default function NavBar({ locoScroll }) {
   const handleScroll = (id) => {
     locoScroll.current.scrollTo(document.querySelector(id), {
       offset: -200,
@@ -18,8 +16,10 @@ export default function NavBar({
   return (
     <nav className={s.container} data-scroll-section>
       <div className={s.logo}>
-        <span>Pelli</span>
-        <p>dev</p>
+        <p className={s.pelli}>
+          P<span>elli</span>
+        </p>
+        <p className={s.dev}>dev</p>
       </div>
       <input type="checkbox" name="click" className={s.click} id="click" />
       <label htmlFor="click" className={s.icon_container}>

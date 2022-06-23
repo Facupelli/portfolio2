@@ -126,11 +126,15 @@
   transform: translate(0%, 50%);
   top: 0;
   left: 50px;
+
+  @media (max-width: 480px) {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
 }
 
 #icons-wrapper {
   position: relative;
-  // background-color: blue;
   height: 80vh;
   display: grid;
   grid-template-columns: repeat(7, 14.28%);

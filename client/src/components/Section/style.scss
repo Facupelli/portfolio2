@@ -1,35 +1,5 @@
 @import "../../App.scss";
 
-@media (max-width: 480px) {
-  #section-container {
-    margin-left: 2rem;
-    margin-right: 2rem;
-
-    .title-wrapper,
-    .title-wrapper-1 {
-      margin-bottom: 2rem;
-
-      .title-right,
-      .title-left {
-        width: auto;
-        top: -120px;
-        left: 0;
-        font-size: 2rem;
-      }
-
-      .title-right {
-        padding: 1rem;
-      }
-
-      .title-left {
-        left: -30%;
-        padding: 1rem;
-        text-align: left;
-      }
-    }
-  }
-}
-
 #section-container {
   @include section_width;
   padding-bottom: 16rem;
@@ -71,8 +41,8 @@
     padding-left: 300px;
     left: 100px;
 
-    @media (min-width: 2000px) {
-      padding-left: 800px;
+    @media (min-width: 1900px) {
+      padding-left: 500px;
     }
   }
 
@@ -81,8 +51,38 @@
     text-align: right;
     padding-right: 400px;
 
-    @media (min-width: 2000px) {
-      padding-right: 900px;
+    @media (min-width: 1900px) {
+      padding-right: 600px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  #section-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    .title-wrapper,
+    .title-wrapper-1 {
+      margin-bottom: 2rem;
+
+      .title-right,
+      .title-left {
+        width: auto;
+        top: -120px;
+        left: 0;
+        font-size: 2rem;
+      }
+
+      .title-right {
+        padding: 1rem;
+      }
+
+      .title-left {
+        left: -30%;
+        padding: 1rem;
+        text-align: left;
+      }
     }
   }
 }
