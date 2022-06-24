@@ -12,6 +12,7 @@
   &:hover {
     background-color: $secondary_color;
     width: 150px;
+    box-shadow: $rosado 4px 0px 10px;
   }
 
   &:hover > ul {
@@ -28,7 +29,7 @@
     }
 
     .dev {
-      opacity: 100%;
+      transform: scale(1);
     }
   }
 
@@ -55,7 +56,8 @@
     }
 
     .dev {
-      opacity: 0;
+      transform: scale(0);
+      transform-origin: center-center;
       transition: all 0.3s ease-in-out 0s;
     }
   }
@@ -83,7 +85,7 @@
     align-items: center;
     justify-content: flex-end;
     gap: 1rem;
-    transition: all 0.3s ease-in-out 0s;
+    transition: all 0.7s ease-in-out 0s;
 
     li {
       text-decoration: none;
