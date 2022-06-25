@@ -24,12 +24,12 @@
       transform: translate(0%, 0);
 
       span {
-        opacity: 100%;
+        clip-path: inset(0% 0% 0% 0%);
       }
     }
 
     .dev {
-      transform: scale(1);
+      clip-path: inset(0% 0% 0% 0%);
     }
   }
 
@@ -46,7 +46,7 @@
       transition: all 0.3s ease-in-out 0s;
 
       span {
-        opacity: 0;
+        clip-path: inset(0% 100% 0% 0%);
         transition: all 0.3s ease-in-out 0s;
       }
 
@@ -56,9 +56,8 @@
     }
 
     .dev {
-      transform: scale(0);
-      transform-origin: center-center;
-      transition: all 0.3s ease-in-out 0s;
+      clip-path: inset(0% 0% 0% 100%);
+      transition: all 1s ease-in-out 0s;
     }
   }
 
