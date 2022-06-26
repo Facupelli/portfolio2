@@ -79,25 +79,25 @@
   }
 }
 
-.js {
-  transition: clip-path 1s cubic-bezier(0.77, 0, 0.175, 1);
-}
-.type {
+// .js {
+//   transition: clip-path 1s cubic-bezier(0.77, 0, 0.175, 1);
+// }
+.react {
   transition: clip-path 1.2s cubic-bezier(0.77, 0, 0.175, 1);
 }
-.node {
+.next {
   transition: clip-path 1.4s cubic-bezier(0.77, 0, 0.175, 1);
 }
-.express {
+.redux {
   transition: clip-path 1.6s cubic-bezier(0.77, 0, 0.175, 1);
 }
-.react {
+.type {
   transition: clip-path 1.8s cubic-bezier(0.77, 0, 0.175, 1);
 }
-.next {
+.node {
   transition: clip-path 2s cubic-bezier(0.77, 0, 0.175, 1);
 }
-.redux {
+.express {
   transition: clip-path 2.2s cubic-bezier(0.77, 0, 0.175, 1);
 }
 .psql {
