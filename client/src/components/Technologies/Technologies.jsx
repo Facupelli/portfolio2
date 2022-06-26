@@ -17,23 +17,6 @@ export default function Technologies({ techsRef }) {
           <p>Here are few technologies I am familiarized with:</p>
           <div className="list-container">
             <ul>
-              <li className="node" data-scroll>
-                Node.js <FontAwesomeIcon icon={faNodeJs} />
-              </li>
-              {/* <li className="js" data-scroll>
-                Javascript <FontAwesomeIcon icon={faJs} />
-              </li> */}
-              <li className="type" data-scroll>
-                Typescript
-              </li>
-              <li className="express" data-scroll>
-                Express
-              </li>
-              <li className="mongo" data-scroll>
-                MongoDB
-              </li>
-            </ul>
-            <ul>
               <li className="react" data-scroll>
                 React <FontAwesomeIcon icon={faReact} />
               </li>
@@ -43,8 +26,25 @@ export default function Technologies({ techsRef }) {
               <li className="redux" data-scroll>
                 Redux
               </li>
+              <li className="type" data-scroll>
+                Typescript
+              </li>
+            </ul>
+            <ul>
+              <li className="node" data-scroll>
+                Node.js <FontAwesomeIcon icon={faNodeJs} />
+              </li>
+              {/* <li className="js" data-scroll>
+                Javascript <FontAwesomeIcon icon={faJs} />
+              </li> */}
+              <li className="express" data-scroll>
+                Express
+              </li>
               <li className="psql" data-scroll>
                 PostgreSQL
+              </li>
+              <li className="mongo" data-scroll>
+                MongoDB
               </li>
             </ul>
           </div>
