@@ -17,23 +17,35 @@ export default function Technologies({ techsRef }) {
           <p>Here are few technologies I am familiarized with:</p>
           <div className="list-container">
             <ul>
-              <li className="js" data-scroll>
-                Javascript <FontAwesomeIcon icon={faJs} />
-              </li>
-              <li className="type" data-scroll>Typescript</li>
               <li className="node" data-scroll>
                 Node.js <FontAwesomeIcon icon={faNodeJs} />
               </li>
-              <li className="express" data-scroll>Express</li>
+              {/* <li className="js" data-scroll>
+                Javascript <FontAwesomeIcon icon={faJs} />
+              </li> */}
+              <li className="type" data-scroll>
+                Typescript
+              </li>
+              <li className="express" data-scroll>
+                Express
+              </li>
+              <li className="mongo" data-scroll>
+                MongoDB
+              </li>
             </ul>
             <ul>
               <li className="react" data-scroll>
                 React <FontAwesomeIcon icon={faReact} />
               </li>
-              <li className="next" data-scroll>Next.js</li>
-              <li className="redux" data-scroll>Redux</li>
-              <li className="psql" data-scroll>PostgreSQL</li>
-              <li className="mongo" data-scroll>MongoDB</li>
+              <li className="next" data-scroll>
+                Next.js
+              </li>
+              <li className="redux" data-scroll>
+                Redux
+              </li>
+              <li className="psql" data-scroll>
+                PostgreSQL
+              </li>
             </ul>
           </div>
         </div>
@@ -45,9 +57,15 @@ export default function Technologies({ techsRef }) {
               <li className="py" data-scroll>
                 Python <FontAwesomeIcon icon={faPython} />
               </li>
-              <li className="deno" data-scroll>Deno</li>
-              <li className="dj" data-scroll>Django</li>
-              <li className="web3" data-scroll>Web3</li>
+              <li className="deno" data-scroll>
+                Deno
+              </li>
+              <li className="dj" data-scroll>
+                Django
+              </li>
+              <li className="web3" data-scroll>
+                Web3
+              </li>
             </ul>
           </div>
         </div>
