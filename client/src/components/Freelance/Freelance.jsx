@@ -3,6 +3,8 @@ import alalaCampo from "../../images/alalaCasa1.png";
 import alalaHome from "../../images/alalaHome.png";
 import donutshomero from "../../images/donutshomero.png";
 import donutshomerocart from "../../images/donutshomerCart.png";
+import guanacoBook from "../../images/guanaco-book.png";
+import guanacoOrders from "../../images/guanaco-orders.png";
 import Section from "../Section/Section";
 import FreelanceCard from "./FreelanceCard/FreelanceCard";
 import "./style.scss";
@@ -15,6 +17,22 @@ export default function Freelance({ freelanceRef }) {
         ref={freelanceRef}
         style={{ scrollMargin: 100 }}
       >
+        <FreelanceCard
+          img1={guanacoBook}
+          img2={guanacoOrders}
+          title="Guanaco Rental"
+          techs={["Next.js", "Sass", "Node", "Express", "Prisma", "PostgreSQL"]}
+          github="https://github.com/Facupelli/guanaco-rental"
+          deploy="https://www.guanacorental.shop/"
+        >
+          <p className="children">
+            Created this web app for Guanaco Rental. It is a film and
+            photography web rental. Now customers can check availability and
+            book equipment online. The owner can access as admin and manage
+            orders, users, rents, equipment, and coupons.
+          </p>
+        </FreelanceCard>
+
         <FreelanceCard
           img1={alalaHome}
           img2={alalaCampo}

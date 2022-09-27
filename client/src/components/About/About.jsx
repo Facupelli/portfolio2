@@ -26,7 +26,7 @@ export default function About({ aboutRef }) {
           </p>
         </div>
         <div className="img-container" data-scroll>
-          <img src={portrait} alt="me" data-scroll />
+          <img src={portrait} alt="me" data-scroll data-scroll-repeat />
         </div>
       </div>
     </Section>
