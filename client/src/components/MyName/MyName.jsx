@@ -11,7 +11,7 @@ import {
 import React from "react";
 import "./style.scss";
 
-export default function Intro() {
+export default function MyName() {
   return (
     <section id="container" data-scroll-section>
       <div id="icons-wrapper">

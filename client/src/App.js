@@ -3,8 +3,7 @@ import useLocoScroll from "./hooks/useLocoScroll";
 import "locomotive-scroll/src/locomotive-scroll.scss";
 
 //COMPONENTS
-import Intro from "./components/Intro/Intro";
-import NavBar from "./components/NavBar/NavBar";
+import MyName from "./components/MyName/MyName";
 import Networks from "./components/Networks/Networks";
 import About from "./components/About/About";
 import Technologies from "./components/Technologies/Technologies";
@@ -31,18 +30,20 @@ function App() {
 
   return (
     <div className="app" data-scroll-container>
-      <header className="nav-column">
+      {/* <header className="nav-column">
         <NavBar locoScroll={locoScroll && locoScroll} />
-      </header>
+      </header> */}
       <main id="main-column">
-        <Networks />
-        <Intro />
-        <About />
-        <Technologies />
-        <Projects setSeeMore={setSeeMore} seeMore={seeMore} />
-        {seeMore && <MoreProjects />}
-        <Freelance />
-        <Contact />
+        <div className="max-width">
+          <Networks />
+          <MyName />
+          <About />
+          <Technologies />
+          <Projects setSeeMore={setSeeMore} seeMore={seeMore} />
+          {seeMore && <MoreProjects />}
+          <Freelance />
+          <Contact />
+        </div>
       </main>
     </div>
   );

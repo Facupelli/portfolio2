@@ -62,8 +62,8 @@ $font_color: #dedede;
 
 .app {
   font-family: $montserrat;
-  display: grid;
-  grid-template-columns: 70px 100%;
+  // display: grid;
+  // grid-template-columns: 70px 100%;
   background-color: $primary_color;
 
   @media (max-width: 480px) {
@@ -83,4 +83,9 @@ $font_color: #dedede;
   //   margin-left: 25px;
   //   margin-right: 25px;
   // }
+}
+
+.max-width {
+  max-width: 1000px;
+  margin: 0 auto;
 }
