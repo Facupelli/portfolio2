@@ -14,11 +14,7 @@ export default function About({ aboutRef }) {
             child. I have always been passionate about technology and building
             things.
           </p>
-          <p>
-            I am a very curious person, always willing to learn more. I am
-            constantly looking forward to improving, learning from everybody,
-            and sharing what I know.
-          </p>
+
           <p>
             I am currently looking for my first opportunity to contribute to
             challenging projects in the IT world with everything I have learned
