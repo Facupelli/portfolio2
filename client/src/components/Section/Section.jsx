@@ -3,7 +3,11 @@ import "./style.scss";
 
 export default function Section({ title, children }) {
   return (
-    <section id="section-container" data-scroll-section>
+    <section
+      id="section-container"
+      className="section-container"
+      data-scroll-section
+    >
       <div
         className={
           title === "Technologies" || title === "Freelance"
@@ -12,8 +16,11 @@ export default function Section({ title, children }) {
         }
       >
         <h1
-          className={ title === "Technologies" || title === "Freelance"
-          ? "title-left" : "title-right"}
+          className={
+            title === "Technologies" || title === "Freelance"
+              ? "title-left"
+              : "title-right"
+          }
           data-scroll
           data-scroll-direction="horizontal"
           data-scroll-speed={

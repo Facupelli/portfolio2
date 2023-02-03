@@ -1,6 +1,7 @@
 @import "../../App.scss";
 
-#contact-section {
+.contact-section {
+  padding-top: 2em;
   color: $font_color;
   text-align: center;
   > p {

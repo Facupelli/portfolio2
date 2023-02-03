@@ -2,12 +2,17 @@ import React from "react";
 import portrait from "../../images/yo.png";
 import Section from "../Section/Section";
 
-import "./style.scss";
+import "./about-styles.scss";
 
 export default function About({ aboutRef }) {
   return (
     <Section title="About Me">
-      <div id="about-section" ref={aboutRef} style={{ scrollMargin: 100 }}>
+      <div
+        id="about-section"
+        className="about-section"
+        ref={aboutRef}
+        style={{ scrollMargin: 100 }}
+      >
         <div className="description" data-scroll>
           <p>
             Hello, my name is Facundo and I enjoy creating things since I was a

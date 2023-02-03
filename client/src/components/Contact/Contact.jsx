@@ -18,7 +18,7 @@ const Mailto = ({ email, children }) => {
 export default function Contact({ contactRef }) {
   return (
     <Section title="Get In Touch">
-      <div id="contact-section">
+      <div id="contact-section" className="contact-section">
         <p data-scroll data-scroll-delay="0.04" data-scroll-speed="2">
           I am currently looking for my first opportunity to contribute on
           challenging projects.

@@ -1,6 +1,6 @@
 @import "../../App.scss";
 
-#section-container {
+.section-container {
   @include section_width;
   padding-bottom: 16rem;
 
@@ -58,10 +58,7 @@
 }
 
 @media (max-width: 480px) {
-  #section-container {
-    margin-left: 2rem;
-    margin-right: 2rem;
-
+  .section-container {
     .title-wrapper,
     .title-wrapper-1 {
       margin-bottom: 2rem;

@@ -33,7 +33,7 @@ function App() {
       {/* <header className="nav-column">
         <NavBar locoScroll={locoScroll && locoScroll} />
       </header> */}
-      <main id="main-column">
+      <main id="main-column" className="main-column">
         <div className="max-width">
           <Networks />
           <MyName />

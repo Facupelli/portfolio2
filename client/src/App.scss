@@ -76,16 +76,12 @@ $font_color: #dedede;
   }
 }
 
-#main-column {
+.main-column {
   position: relative;
-
-  // @media (max-width: 480px) {
-  //   margin-left: 25px;
-  //   margin-right: 25px;
-  // }
 }
 
 .max-width {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 0 1em;
 }
