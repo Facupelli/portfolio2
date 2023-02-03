@@ -60,9 +60,8 @@ export default function MyName() {
             FULL STACK DEVELOPER.
           </p>
           <p className={s.about}>
-            I have both frontend and backend knowledge which helps me build
-            complete websites, gives me flexibility and a wider view. In love
-            with React.js.
+            I'm passionate about technology and fascinated with creating things
+            to help people from scratch. In love with react.
           </p>
         </div>
       </div>
