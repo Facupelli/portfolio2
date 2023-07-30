@@ -54,6 +54,7 @@
       height: 100%;
       border-radius: 0.2rem;
       object-fit: cover;
+      object-position: 0px -70px;
 
       clip-path: inset(100% 0% 0% 0%);
       transition: all 2s cubic-bezier(0.77, 0, 0.175, 1);

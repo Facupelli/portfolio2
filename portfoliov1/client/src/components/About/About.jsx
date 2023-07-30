@@ -1,5 +1,5 @@
 import React from "react";
-import portrait from "../../images/yo.png";
+import portrait from "../../images/profile-pic.jpeg";
 import Section from "../Section/Section";
 
 import "./about-styles.scss";
